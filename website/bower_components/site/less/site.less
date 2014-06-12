@@ -1,49 +1,87 @@
-﻿@import "../../bootstrap/less/bootstrap.less";
+﻿@import '../../bootstrap/less/bootstrap.less';
 @import 'ie-10.less';
 
-#navigation {
+.group {
+    background:green;
+    border:thin solid red;
+}
 
-    ul.nav li:last-child a span {
-        background: silver;
-        padding: 4px 8px;
-        margin: 0;
-        border-radius: 4px;
-    }
+#layout-wrapper {
+}
 
-    i.orchard-icon {
-        background-image: url(../imgs/orchard-icon.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: inline-block;
-        float: left;
-        margin-right: 10px;
-        height: 20px;
-        width: 20px;
+#layout-header {
+
+    #header {
     }
 }
 
-#splash {
+#layout-navigation {
 }
 
-#main-content {
-    .container-fluid;
+#layout-featured {
+}
 
-    section {
-        .make-row;
-    }
+#layout-before-main {
+}
 
-    section > header {
-        .make-md-column(12);
-    }
+#layout-main-container {
 
-    section > aside {
-    }
+    #layout-main {
+        #aside-first {
+        }
 
-    section > aside {
+        #layout-content {
+            #messages {
+            }
 
+            #before-content {
+            }
+
+            #content {
+            }
+
+            #after-content {
+            }
+        }
+
+        #aside-second {
+        }
     }
 }
 
-img {
-    .img-responsive;
+#layout-after-main {
+}
+
+#layout-tripel-container {
+    #layout-tripel {
+        #tripel-first {
+        }
+
+        #tripel-second {
+        }
+
+        #tripel-third {
+        }
+    }
+}
+
+#layout-footer {
+    #footer {
+        #footer-quad {
+            #footer-quad-first {
+            }
+
+            #footer-quad-second {
+            }
+
+            #footer-quad-third {
+            }
+
+            #footer-quad-fourth {
+            }
+        }
+
+        #footer-sig {
+        }
+    }
 }
