@@ -3932,18 +3932,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: none;
 }
 .navbar-default .navbar-brand {
-  color: #777777;
+  color: #000000;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #000000;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #777777;
+  color: #000000;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #000000;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -3984,7 +3984,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777777;
+    color: #000000;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -4005,7 +4005,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default .navbar-link {
-  color: #777777;
+  color: #000000;
 }
 .navbar-default .navbar-link:hover {
   color: #333333;
@@ -5825,6 +5825,22 @@ button.close {
     margin-right: 0;
     margin-left: 0;
   }
+}
+#navigation ul.nav li:last-child a span {
+  background: silver;
+  padding: 4px 8px;
+  margin: 0;
+  border-radius: 4px;
+}
+#navigation i.orchard-icon {
+  background-image: url(../imgs/orchard-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  height: 20px;
+  width: 20px;
 }
 #main-content {
   margin-right: auto;

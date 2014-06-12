@@ -2,20 +2,35 @@
 
 @import 'ie-10.less';
 
-#navigation
-{
+#navigation {
     .container;
+
+    ul.nav li:last-child a span {
+        background: silver;
+        padding: 4px 8px;
+        margin: 0;
+        border-radius: 4px;
+    }
+
+    i.orchard-icon {
+        background-image: url(../imgs/orchard-icon.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+        display: inline-block;
+        float: left;
+        margin-right: 10px;
+        height: 20px;
+        width: 20px;
+    }
 }
 
-#main-content
-{
+#main-content {
     .container-fluid;
-    background-image:url(../imgs/no-limits.PNG);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-image: url(../imgs/no-limits.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-img
-{
+img {
     .img-responsive;
 }
