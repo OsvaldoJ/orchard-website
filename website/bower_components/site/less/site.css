@@ -5789,6 +5789,6 @@ button.close {
 }
 .group {
   background: green;
-  border: thin solid red;
+  border-bottom: thin solid red;
 }
 /*# sourceMappingURL=site.css.map */
