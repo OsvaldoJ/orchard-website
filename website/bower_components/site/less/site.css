@@ -5607,8 +5607,6 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
-#navigation:before,
-#navigation:after,
 #main-content:before,
 #main-content:after {
   content: " ";
@@ -5628,7 +5626,6 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
-#navigation:after,
 #main-content:after {
   clear: both;
 }
@@ -5792,24 +5789,6 @@ button.close {
 }
 @viewport {
   width: device-width;
-}
-#navigation {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-#navigation > .navbar-header,
-#navigation > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-@media (min-width: 1050px) {
-  #navigation > .navbar-header,
-  #navigation > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-  }
 }
 #navigation ul.nav li:last-child a span {
   background: silver;
