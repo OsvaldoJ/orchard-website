@@ -23,7 +23,7 @@ function InjectFakeWidget(widgetContainer) {
     var widgetClass = classes[1]; // todo Do this more accurately
     var widgetName = camelCase(widgetClass.replace('widget-', ''));
 
-    $.get('bower_components/site/ajax/widgets/' + widgetName + '.html?foo=bar', function (data) {
+    $.get('bower_components/site/ajax/widgets/' + widgetName + '.html?foo=1', function (data) {
         if (data.length > 0) {
             widgetContainer.append(data);
         }
