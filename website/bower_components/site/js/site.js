@@ -37,7 +37,7 @@ function InjectFakeZone(zoneName, containerId) {
 
     container.empty();
 
-    $.get('bower_components/site/ajax/zones/' + zoneName + '.html', function (data) {
+    $.get('bower_components/site/ajax/zones/' + zoneName + '.html?foo=1', function (data) {
 
         if (data.length > 0) {
 
@@ -51,10 +51,8 @@ function InjectFakeZone(zoneName, containerId) {
     });
 }
 
-$(function () {
-
-    // Handler for .ready() called.
-
+function InjectFakeZones()
+{
     InjectFakeZone('Header', 'header');
     InjectFakeZone('Navigation', 'layout-navigation');
     InjectFakeZone('Featured', 'layout-featured');
@@ -74,6 +72,12 @@ $(function () {
     InjectFakeZone('FooterQuadThird', 'footer-quad-third');
     InjectFakeZone('FooterQuadFourth', 'footer-quad-fourth');
     InjectFakeZone('Footer', 'footer-sig');
+}
+
+$(function () {
+
+    // Handler for .ready() called.
+    InjectFakeZones();
 
 });
 
