@@ -5957,7 +5957,6 @@ button.close {
 #layout-footer {
   background-color: #d9d9d9;
   padding: 40px;
-  height: 300px;
 }
 #layout-footer #footer {
   margin-right: auto;
@@ -6187,6 +6186,16 @@ h5,
 ol,
 strong {
   text-transform: uppercase;
+}
+ul#partner-sites {
+  padding-left: 0;
+  list-style: none;
+}
+ul#partner-sites li {
+  margin: 5px 0 5px -6px;
+}
+ul#partner-sites img {
+  height: 30px;
 }
 /*#endregion*/
 /*#region Bootstrap Overrides*/
