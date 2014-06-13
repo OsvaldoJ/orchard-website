@@ -15,6 +15,56 @@
 /*#endregion*/
 
 
+/*#region Widgets*/
+
+.widget-showcase,
+.widget-features {
+    .features,
+    .showcase {
+        .make-row;
+
+        .feature, .showcase-item {
+            .make-md-column(4);
+            .text-center;
+
+            * {
+                .center-block;
+            }
+        }
+
+        .feature {
+            margin-bottom: 60px;
+
+            img {
+                width: 75px;
+                height: 75px;
+            }
+
+            .caption {
+                width: 180px;
+            }
+        }
+    }
+}
+
+.widget-community {
+    .carousel .item {
+        .make-row();
+
+        > div {
+            .make-md-column(2);
+            .make-md-column-offset(1);
+
+            &:first-child {
+                .make-md-column-offset(2);
+            }
+        }
+    }
+}
+
+
+/*#endregion*/
+
 /*#region Orchard Ids*/
 
 #layout-wrapper {
@@ -85,36 +135,13 @@
                         border: none;
                     }
 
-                    .widget:nth-child(even) {
-                        background: @gray-lighter;
+                    .widget
+                    {
+                        padding-bottom:40px;
                     }
 
-                    .features,
-                    .showcase {
-                        .make-row;
-
-                        .feature, .showcase-item {
-                            .make-md-column(4);
-                            .text-center;
-
-                            * {
-                                .center-block;
-                            }
-                        }
-
-                        .feature {
-
-                            margin-bottom:60px;
-
-                            img {
-                                width: 75px;
-                                height: 75px;
-                            }
-
-                            .caption {
-                                width: 180px;                                
-                            }
-                        }
+                    .widget:nth-child(even) {
+                        background: @gray-lighter;
                     }
                 }
             }
@@ -199,11 +226,18 @@ img {
     }
 }
 
-h1, h2, h3, h4, h5, ol
-{
-    text-transform:uppercase;
+h1, h2, h3, h4, h5, ol {
+    text-transform: uppercase;
 }
 
 /*#endregion*/
 
 /*#region Bootstrap Overrides*/
+
+.carousel {
+    .carousel-control {
+        background: none;
+    }
+}
+
+/*#endregion*/
