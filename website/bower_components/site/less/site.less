@@ -9,12 +9,16 @@
 .zone {
 }
 
+.widget {
+}
+
 /*#endregion*/
 
 
 /*#region Orchard Ids*/
 
 #layout-wrapper {
+    background: @gray-light;
 }
 
 #layout-header {
@@ -24,44 +28,45 @@
 }
 
 #layout-navigation {
+    background: white;
 
-    .zone {
+    .zone-navigation {
         .container;
-    }
-
-    .orchard-icon {
-        background-image: url('../imgs/orchard-icon.png');
-        background-size: cover;
-        display: inline-block;
-        height: 20px;
-        width: 20px;
-        margin-right: 4px;
     }
 }
 
 #layout-featured {
+    background-image: url('../imgs/no-limits.png');
+    background-size: cover;
+    height: 600px;
+
+    .zone-featured {
+        .container;
+        height: 600px;
+        background: white;
+        .opacity(0.2);
+    }
 }
 
 #layout-before-main {
     background: @gray-dark;
     color: white;
+    padding: 10px 0;
 
     .zone {
-        padding: 10px 0;
         .container;
     }
 }
 
 #layout-main-container {
-    background-color: @gray-lighter;
 
     #layout-main {
-        .container;
 
         #aside-first {
         }
 
         #layout-content {
+
             #messages {
             }
 
@@ -69,6 +74,49 @@
             }
 
             #content {
+
+                .zone-content {
+
+                    header {
+                        margin: 60px 0 70px 0;
+                    }
+
+                    .thumbnail {
+                        border: none;
+                    }
+
+                    .widget:nth-child(even) {
+                        background: @gray-lighter;
+                    }
+
+                    .features,
+                    .showcase {
+                        .make-row;
+
+                        .feature, .showcase-item {
+                            .make-md-column(4);
+                            .text-center;
+
+                            * {
+                                .center-block;
+                            }
+                        }
+
+                        .feature {
+
+                            margin-bottom:60px;
+
+                            img {
+                                width: 75px;
+                                height: 75px;
+                            }
+
+                            .caption {
+                                width: 180px;                                
+                            }
+                        }
+                    }
+                }
             }
 
             #after-content {
@@ -124,11 +172,19 @@
 
 .widget header {
     text-align: center;
-    margin: 60px 0;
 }
 
 img {
     .img-responsive;
+}
+
+.orchard-icon {
+    background-image: url('../imgs/orchard-icon.png');
+    background-size: cover;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
 }
 
 .thumbnail .caption {
@@ -138,9 +194,14 @@ img {
 .widget-features {
     img {
         .img-circle;
-        width:150px;
-        height:150px;
+        width: 150px;
+        height: 150px;
     }
+}
+
+h1, h2, h3, h4, h5, ol
+{
+    text-transform:uppercase;
 }
 
 /*#endregion*/
