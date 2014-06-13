@@ -37,7 +37,7 @@ function InjectFakeZone(zoneName, containerId) {
 
     container.empty();
 
-    $.get('bower_components/site/ajax/' + zoneName + '.html', function (data) {
+    $.get('bower_components/site/ajax/zones/' + zoneName + '.html', function (data) {
 
         if (data.length > 0) {
 
