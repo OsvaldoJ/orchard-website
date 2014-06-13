@@ -1,10 +1,18 @@
 ﻿@import '../../bootstrap/less/bootstrap.less';
 @import 'ie-10.less';
 
+/*#region Orchard Classes */
+
 .group {
-    background:green;
-    border-bottom:thin solid red;
 }
+
+.zone {
+}
+
+/*#endregion*/
+
+
+/*#region Orchard Ids*/
 
 #layout-wrapper {
 }
@@ -16,17 +24,40 @@
 }
 
 #layout-navigation {
+
+    .zone {
+        .container;
+    }
+
+    .orchard-icon {
+        background-image: url('../imgs/orchard-icon.png');
+        background-size: cover;
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        margin-right: 4px;
+    }
 }
 
 #layout-featured {
 }
 
 #layout-before-main {
+    background: @gray-dark;
+    color: white;
+
+    .zone {
+        padding: 10px 0;
+        .container;
+    }
 }
 
 #layout-main-container {
+    background-color: @gray-lighter;
 
     #layout-main {
+        .container;
+
         #aside-first {
         }
 
@@ -85,3 +116,33 @@
         }
     }
 }
+
+/*#endregion*/
+
+
+/*#region Miscellaneous*/
+
+.widget header {
+    text-align: center;
+    margin: 60px 0;
+}
+
+img {
+    .img-responsive;
+}
+
+.thumbnail .caption {
+    .text-center;
+}
+
+.widget-features {
+    img {
+        .img-circle;
+        width:150px;
+        height:150px;
+    }
+}
+
+/*#endregion*/
+
+/*#region Bootstrap Overrides*/

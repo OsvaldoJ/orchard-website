@@ -7,11 +7,11 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-darker:            lighten(#000, 13.5%); // #222
-@gray-dark:              lighten(#000, 20%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 60%);   // #999
-@gray-lighter:           lighten(#000, 93.5%); // #eee
+@gray-darker:            #464646; // lighten(#000, 13.5%); // #222
+@gray-dark:              #626262; // lighten(#000, 20%);   // #333
+@gray:                   #8e8d8d; // lighten(#000, 33.5%); // #555
+@gray-light:             #CBCBCB; // lighten(#000, 60%);   // #999
+@gray-lighter:           #D9D9D9; // lighten(#000, 93.5%); // #eee
 
 @brand-primary:         #428bca;
 @brand-success:         #5cb85c;
@@ -72,7 +72,7 @@
 //
 //## Specify custom locations of the include Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
-@icon-font-path:          "../fonts/";
+@icon-font-path:          "../../bootstrap/fonts/";
 @icon-font-name:          "glyphicons-halflings-regular";
 @icon-font-svg-id:        "glyphicons_halflingsregular";
 
@@ -701,7 +701,7 @@
 //** Padding around the thumbnail image
 @thumbnail-padding:           4px;
 //** Thumbnail background color
-@thumbnail-bg:                @body-bg;
+@thumbnail-bg:                none; // @body-bg;
 //** Thumbnail border color
 @thumbnail-border:            #ddd;
 //** Thumbnail border radius
@@ -815,7 +815,7 @@
 //** Blockquote border color
 @blockquote-border-color:     @gray-lighter;
 //** Page header border color
-@page-header-border-color:    @gray-lighter;
+@page-header-border-color:    @gray; // @gray-lighter;
 
 
 //== Miscellaneous
