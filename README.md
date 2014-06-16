@@ -1,5 +1,6 @@
 orchard-website
 ===============
 
-- HTML, CSS, and JS mock up for orchardproject.net website.
-- Uses Bootstrap with Less and jQuery.
+- **HTML, CSS, and LESS** mock-up for new orchardproject.net website.
+- Uses Bootstrap.
+- No JavaScript, no Razor, no C#.
