@@ -79,6 +79,7 @@
     <Content Include="Content\site\imgs\partner-square-outercurve.PNG" />
     <Content Include="Content\site\imgs\partner-square-pluralsite.PNG" />
     <Content Include="Content\site\imgs\partner-square-teamcity.PNG" />
+    <Content Include="Content\site\imgs\unicorns.jpg" />
     <Content Include="Content\site\scaffolding-overrides.css.map">
       <DependentUpon>scaffolding-overrides.css</DependentUpon>
     </Content>
