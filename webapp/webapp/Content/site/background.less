@@ -1,0 +1,24 @@
+﻿@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+
+section {
+    background-color: @gray-light;
+    min-height: 20px;
+}
+
+section:nth-child(2n) {
+    background-color: @gray-lighter;
+}
+
+#latest-post {
+    background-color: @gray-dark;
+    color: white;
+}
+
+.nav.navbar-nav.navbar-right {
+    li:last-child a {
+        background: @gray;
+        padding:2px 5px;
+        margin-top:25px;
+    }
+}

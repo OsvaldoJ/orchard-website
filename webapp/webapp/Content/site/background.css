@@ -1,0 +1,17 @@
+section {
+  background-color: #cccccc;
+  min-height: 20px;
+}
+section:nth-child(2n) {
+  background-color: #dadada;
+}
+#latest-post {
+  background-color: #9d9b9b;
+  color: white;
+}
+.nav.navbar-nav.navbar-right li:last-child a {
+  background: #bfbfbf;
+  padding: 2px 5px;
+  margin-top: 25px;
+}
+/*# sourceMappingURL=background.css.map */

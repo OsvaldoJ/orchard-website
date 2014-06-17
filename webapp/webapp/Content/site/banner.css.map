@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "banner.css",
+  "sources": [
+    "banner.less",
+    "../bootstrap/mixins.less"
+  ],
+  "names": [],
+  "mappings": "AAGA,OAEI;ECmCF,cAAA;EACA,iBAAA;EACA,kBAAA;;ADvCF,OAMI;EACI,aAAA"
+}
