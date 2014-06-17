@@ -1,8 +1,6 @@
 orchard-website
 ===============
 
-## Step 1
-
 - **HTML, CSS (LESS), and JavaScript** mock-up for new orchardproject.net website.
 - Uses Bootstrap.
 - Uses copy-and-paste technology (not Razor, Angular, etc) for now.
