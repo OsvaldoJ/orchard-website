@@ -518,10 +518,6 @@ figure figcaption {
   margin-bottom: 40px;
   text-align: center;
 }
-#showcase figure figcaption {
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
 #features figure img {
   border-radius: 50%;
   width: 75px;
