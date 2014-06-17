@@ -508,28 +508,27 @@ hr {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure figcaption {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
 #showcase figure figcaption {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-#features figure {
-  text-align: center;
-}
 #features figure img {
   border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 75px;
 }
 #features figure figcaption {
   margin-top: 20px;
   line-height: 14px;
-}
-figcaption {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  text-align: center;
 }
 footer {
   padding-top: 30px;

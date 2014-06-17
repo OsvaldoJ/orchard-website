@@ -30,6 +30,7 @@ textarea {
 }
 a {
   color: #000000;
+  text-decoration: none;
 }
 a:hover,
 a:focus {
@@ -422,27 +423,26 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
+figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure figcaption {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
 #showcase figure figcaption {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-#features figure {
-  text-align: center;
-}
 #features figure img {
   border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 75px;
 }
 #features figure figcaption {
   margin-top: 20px;
   line-height: 14px;
-}
-figcaption {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  text-align: center;
 }
 /*# sourceMappingURL=figures.css.map */
