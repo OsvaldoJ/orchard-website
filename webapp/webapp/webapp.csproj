@@ -68,7 +68,43 @@
     <Content Include="Content\bootstrap\bootstrap.css">
       <DependentUpon>bootstrap.less</DependentUpon>
     </Content>
+    <Content Include="Content\bootstrap\variables.css">
+      <DependentUpon>variables.less</DependentUpon>
+    </Content>
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\site\background.css">
+      <DependentUpon>background.less</DependentUpon>
+    </Content>
+    <Content Include="Content\site\banner.css">
+      <DependentUpon>banner.less</DependentUpon>
+    </Content>
+    <Content Include="Content\site\imgs\feature.png" />
+    <Content Include="Content\site\imgs\no-limits.PNG" />
+    <Content Include="Content\site\imgs\orchard-admin.png" />
+    <Content Include="Content\site\imgs\orchard-icon.png" />
+    <Content Include="Content\site\imgs\partner-outercurve.PNG" />
+    <Content Include="Content\site\imgs\partner-pluralsite.PNG" />
+    <Content Include="Content\site\imgs\partner-site.PNG" />
+    <Content Include="Content\site\imgs\partner-site_2.PNG" />
+    <Content Include="Content\site\imgs\partner-site_3.PNG" />
+    <Content Include="Content\site\imgs\partner-site_4.PNG" />
+    <Content Include="Content\site\imgs\partner-site_5.PNG" />
+    <Content Include="Content\site\imgs\partner-site_6.PNG" />
+    <Content Include="Content\site\imgs\partner-site_7.PNG" />
+    <Content Include="Content\site\imgs\partner-teamcity.PNG" />
+    <Content Include="Content\site\imgs\screenshot.png" />
+    <Content Include="Content\site\show.css">
+      <DependentUpon>show.less</DependentUpon>
+    </Content>
+    <Content Include="Content\site\site.css">
+      <DependentUpon>site.less</DependentUpon>
+    </Content>
+    <Content Include="Content\site\structure.css">
+      <DependentUpon>structure.less</DependentUpon>
+    </Content>
+    <Content Include="Content\site\type.css">
+      <DependentUpon>type.less</DependentUpon>
+    </Content>
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
@@ -116,6 +152,32 @@
     <Content Include="Content\bootstrap\alerts.less" />
     <Content Include="Content\bootstrap\bootstrap.css.map">
       <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="Content\site\site.less" />
+    <Content Include="Content\site\background.less" />
+    <Content Include="Content\site\background.css.map">
+      <DependentUpon>background.css</DependentUpon>
+    </Content>
+    <Content Include="Content\site\site.css.map">
+      <DependentUpon>site.css</DependentUpon>
+    </Content>
+    <Content Include="Content\site\show.less" />
+    <Content Include="Content\site\show.css.map">
+      <DependentUpon>show.css</DependentUpon>
+    </Content>
+    <Content Include="Content\bootstrap\variables-original.less" />
+    <Content Include="Content\site\imgs\Thumbs.db" />
+    <Content Include="Content\site\type.less" />
+    <Content Include="Content\site\type.css.map">
+      <DependentUpon>type.css</DependentUpon>
+    </Content>
+    <Content Include="Content\site\banner.less" />
+    <Content Include="Content\site\banner.css.map">
+      <DependentUpon>banner.css</DependentUpon>
+    </Content>
+    <Content Include="Content\site\structure.less" />
+    <Content Include="Content\site\structure.css.map">
+      <DependentUpon>structure.css</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
