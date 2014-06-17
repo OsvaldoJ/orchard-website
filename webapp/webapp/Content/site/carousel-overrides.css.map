@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "file": "carousel-overrides.css",
+  "sources": [
+    "carousel-overrides.less"
+  ],
+  "names": [],
+  "mappings": "AAII,iBAAC;AAAO,iBAAC;EACL,sBAAA"
+}

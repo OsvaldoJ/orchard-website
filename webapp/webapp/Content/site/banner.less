@@ -2,12 +2,42 @@
 @import "../bootstrap/mixins.less";
 
 #banner {
+    padding: 0;
 
-    img {
-        .center-block;
+    @media(min-width:@screen-lg-min) {
+        .banner-inner {
+            .center-block;
+            position:relative;
+        }
+
+        .banner-caption {
+            position:absolute;
+            height:400px;
+            width:600px;
+            top:50%;
+            margin-top:-200px;
+            left:100px;
+        }
+    }
+
+    .banner-inner {
+        display: table;
+        margin: auto;
     }
 
     .banner-caption {
-        display: none; // haven't figured out how to display this for responsive design
+        background-color: black;
+        .opacity(0.95);
+        color: white;
+        padding: 10px;
+        font-size:@font-size-large;
+        h1
+            {
+            font-size:72px;
+        }        
+    }
+
+    img {
+        .center-block;
     }
 }

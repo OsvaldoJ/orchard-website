@@ -1,0 +1,28 @@
+﻿@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+@import "../bootstrap/type.less";
+
+footer {
+    padding-top: 30px;
+    background-color: @gray-lighter;
+
+    ul {
+        text-transform: uppercase;
+        .list-unstyled;
+        margin-top: 15px;
+
+        li {
+            margin-bottom: 15px;
+            img
+                {
+                height:25px;
+            }
+        }
+
+        ul {
+            text-transform: capitalize;
+            font-size:@font-size-small;
+            color:@gray-darker;
+        }
+    }
+}

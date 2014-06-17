@@ -4,16 +4,15 @@ header {
   margin-bottom: 40px;
   border-bottom: thin solid #bfbfbf;
 }
-figcaption {
-  margin-top: 20px;
-  margin-bottom: 40px;
+section {
+  padding-bottom: 60px;
 }
 section {
-  background-color: #cccccc;
+  background-color: #dadada;
   min-height: 20px;
 }
 section:nth-child(2n) {
-  background-color: #dadada;
+  background-color: #cccccc;
 }
 #latest-post {
   background-color: #9d9b9b;
@@ -367,25 +366,195 @@ h1,
 h2,
 h3,
 h4,
-figcaption,
+h5,
+h6,
 nav {
   text-transform: uppercase;
 }
-header,
-figcaption {
-  font-weight: 600;
+header {
   text-align: center;
+}
+header h1,
+header h2,
+header h3,
+header h4,
+header h5 {
+  font-weight: 600;
 }
 .double-spaced {
   line-height: 2.5;
+}
+#banner {
+  padding: 0;
+}
+@media (min-width: 1200px) {
+  #banner .banner-inner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  #banner .banner-caption {
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    top: 50%;
+    margin-top: -200px;
+    left: 100px;
+  }
+}
+#banner .banner-inner {
+  display: table;
+  margin: auto;
+}
+#banner .banner-caption {
+  background-color: black;
+  opacity: 0.95;
+  filter: alpha(opacity=95);
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+#banner .banner-caption h1 {
+  font-size: 72px;
 }
 #banner img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-#banner .banner-caption {
-  display: none;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: "Verdana";
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #000000;
+  background-color: #ffffff;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #000000;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+figure {
+  margin: 0;
+}
+img {
+  vertical-align: middle;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.img-circle {
+  border-radius: 50%;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #dadada;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+#showcase figure figcaption {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#features figure {
+  text-align: center;
+}
+#features figure img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
+}
+#features figure figcaption {
+  margin-top: 20px;
+  line-height: 14px;
+}
+figcaption {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+footer {
+  padding-top: 30px;
+  background-color: #dadada;
+}
+footer ul {
+  text-transform: uppercase;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 15px;
+}
+footer ul li {
+  margin-bottom: 15px;
+}
+footer ul li img {
+  height: 25px;
+}
+footer ul ul {
+  text-transform: capitalize;
+  font-size: 12px;
+  color: #636363;
 }
 body.show .row {
   border: thin solid red;
@@ -395,6 +564,13 @@ body.show .row {
 body.show [class*="col-md-"] {
   border: thin solid green;
   min-height: 50px;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+a {
+  color: #000000;
 }
 img {
   display: block;

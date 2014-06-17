@@ -1,0 +1,33 @@
+﻿@import "../bootstrap/variables.less";
+@import "../bootstrap/mixins.less";
+@import "../bootstrap/scaffolding.less";
+@import "../bootstrap/type.less";
+
+#showcase figure {
+    figcaption {
+        margin-top: @line-height-computed;
+        margin-bottom: 2 * @line-height-computed;
+    }
+}
+
+#features figure {
+    text-align: center;
+
+    img {
+        .img-circle;
+        .center-block;
+        width:75px;
+    }
+
+
+    figcaption {
+        margin-top: @line-height-computed;
+        line-height:@line-height-computed * 0.7;
+    }
+}
+
+figcaption {
+    margin-top: @line-height-computed;
+    margin-bottom: 2 * @line-height-computed;
+    .text-center;
+}

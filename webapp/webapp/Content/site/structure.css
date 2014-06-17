@@ -4,8 +4,7 @@ header {
   margin-bottom: 40px;
   border-bottom: thin solid #bfbfbf;
 }
-figcaption {
-  margin-top: 20px;
-  margin-bottom: 40px;
+section {
+  padding-bottom: 60px;
 }
 /*# sourceMappingURL=structure.css.map */
