@@ -708,7 +708,7 @@ pre {
   line-height: 1.42857143;
   word-break: break-all;
   word-wrap: break-word;
-  color: #ffffff;
+  color: #eba5a3;
   background-color: #f5f5f5;
   border: 1px solid #cccccc;
   border-radius: 4px;
@@ -1634,7 +1634,7 @@ legend {
   margin-bottom: 20px;
   font-size: 21px;
   line-height: inherit;
-  color: #ffffff;
+  color: #eba5a3;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -1678,7 +1678,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #ffffff;
+  color: #f7dcdc;
 }
 .form-control {
   display: block;
@@ -1687,7 +1687,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #ffffff;
+  color: #f7dcdc;
   background-color: #ffffff;
   background-image: none;
   border: 1px solid #cccccc;
@@ -3033,13 +3033,13 @@ input[type="button"].btn-block {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #ffffff;
+  color: #eba5a3;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #f2f2f2;
+  color: #e7908e;
   background-color: #f5f5f5;
 }
 .dropdown-menu > .active > a,
@@ -3367,7 +3367,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #ffffff;
+  color: #f7dcdc;
   text-align: center;
   background-color: #ffffff;
   border: 1px solid #cccccc;
@@ -3500,7 +3500,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #ffffff;
+  color: #f7dcdc;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
@@ -4944,7 +4944,7 @@ a.list-group-item-danger.active:focus {
   border-color: #dddddd;
 }
 .panel-default > .panel-heading {
-  color: #ffffff;
+  color: #eba5a3;
   background-color: #f5f5f5;
   border-color: #dddddd;
 }
@@ -5458,7 +5458,7 @@ button.close {
   opacity: 1;
   filter: alpha(opacity=100);
   font-size: 20px;
-  color: #ffffff;
+  color: #eba5a3;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -5479,7 +5479,7 @@ button.close {
 .carousel-control:hover,
 .carousel-control:focus {
   outline: none;
-  color: #ffffff;
+  color: #eba5a3;
   text-decoration: none;
   opacity: 0.9;
   filter: alpha(opacity=90);

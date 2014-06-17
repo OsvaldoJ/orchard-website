@@ -1,16 +1,16 @@
 section {
-  background-color: #ffffff;
+  background-color: #eba5a3;
   min-height: 20px;
 }
 section:nth-child(2n) {
-  background-color: #ffffff;
+  background-color: #f7dcdc;
 }
 #latest-post {
-  background-color: #ffffff;
+  background-color: #e58a88;
   color: white;
 }
 .nav.navbar-nav.navbar-right li:last-child a {
-  background: #ffffff;
+  background: #f7dcdc;
   padding: 2px 5px;
   margin-top: 25px;
 }
