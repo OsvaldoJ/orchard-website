@@ -397,8 +397,6 @@ header h5 {
   #banner .banner-caption {
     position: absolute;
     height: 300px;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
     width: 600px;
     top: 50%;
     margin-top: -200px;
@@ -410,8 +408,8 @@ header h5 {
 }
 #banner .banner-caption {
   background-color: black;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
   color: white;
   padding: 10px;
   font-size: 18px;
