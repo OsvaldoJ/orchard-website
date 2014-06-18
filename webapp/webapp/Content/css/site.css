@@ -400,13 +400,11 @@ header h5 {
   padding: 10px;
 }
 #banner .caption h1 {
-  color: black;
-  background-color: white;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   bottom: 175px;
   font-size: 24px;
-  left: 0;
+  left: 5px;
   line-height: 1.42857143;
   position: absolute;
   width: 100%;
@@ -435,10 +433,8 @@ header h5 {
     margin-top: -137.5px;
     position: absolute;
     top: 50%;
-    color: black;
-    background-color: white;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     display: block;
     font-size: 18px;
     left: 5%;
@@ -446,8 +442,7 @@ header h5 {
     width: 500px;
   }
   #banner .banner-inner .caption h1 {
-    opacity: 1;
-    filter: alpha(opacity=100);
+    background-color: rgba(0, 0, 0, 0);
     font-size: 72px;
     line-height: 72px;
     position: static;

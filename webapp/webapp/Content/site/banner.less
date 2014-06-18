@@ -5,13 +5,16 @@
 /*#region mixins */
 
 .banner-overlay() {
-    color: black;
-    background-color: white;
-    .opacity(0.6);
+    //.opacity(0.6);
+    //background-color: white;
+    //color: black;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
 }
 
 .clear-banner-overlay() {
-    .opacity(1);
+    //. opacity(1);
+    background-color: rgba(0,0,0,0);
 }
 
 .center-child-inline-block() {
@@ -57,7 +60,7 @@
             .banner-overlay();
             bottom: @caption-height;
             font-size: @font-size-h3;
-            left: 0;
+            left: 5px;
             line-height: @line-height-base;
             position: absolute;
             width: 100%;
