@@ -57,6 +57,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\figures.css" />
+    <Content Include="Content\css\footer.css" />
+    <Content Include="Content\css\partners.css" />
+    <Content Include="Content\css\site.css" />
     <Content Include="Content\site\carousel-overrides.css">
       <DependentUpon>carousel-overrides.less</DependentUpon>
     </Content>
@@ -86,7 +91,7 @@
     <Content Include="Content\site\footer.css.map">
       <DependentUpon>footer.css</DependentUpon>
     </Content>
-    <Content Include="Content\site\images.less" />
+    <Content Include="Content\site\partners.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
