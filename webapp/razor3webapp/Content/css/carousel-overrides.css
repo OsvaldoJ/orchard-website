@@ -1564,11 +1564,6 @@
 .fa-bomb:before {
   content: "\f1e2";
 }
-section div,
-.carousel,
-.carousel-control {
-  background-color: inherit;
-}
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;

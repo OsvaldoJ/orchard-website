@@ -347,6 +347,12 @@ address {
 #banner .banner-inner {
   position: relative;
 }
+#banner .carousel-indicators {
+  left: 5px;
+  margin: 0;
+  text-align: left;
+  top: 5px;
+}
 #banner .caption {
   display: table;
   height: 175px;

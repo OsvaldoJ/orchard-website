@@ -5,15 +5,11 @@
 /*#region mixins */
 
 .banner-overlay() {
-    //.opacity(0.6);
-    //background-color: white;
-    //color: black;
     background-color: rgba(0,0,0,0.5);
     color: white;
 }
 
 .clear-banner-overlay() {
-    //. opacity(1);
     background-color: rgba(0,0,0,0);
 }
 
@@ -45,6 +41,13 @@
 
     .banner-inner {
         position: relative;
+    }
+
+    .carousel-indicators {
+        left: 5px;
+        margin: 0;
+        text-align: left;
+        top:5px;
     }
 
     .caption {
