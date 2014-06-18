@@ -416,7 +416,7 @@ header h5 {
   vertical-align: middle;
 }
 #banner .caption .caption-body ul {
-  padding-left: 15px;
+  padding-left: 25px;
 }
 @media (min-width: 768px) {
   #banner {
@@ -685,3 +685,4 @@ img {
 #latest-post {
   padding: 20px;
 }
+/*# sourceMappingURL=site.css.map */
