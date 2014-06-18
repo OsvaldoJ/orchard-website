@@ -7571,3 +7571,6 @@ header h5 {
 .double-spaced {
   line-height: 2.5;
 }
+#why-orchard ol li.active {
+  font-weight: bold;
+}

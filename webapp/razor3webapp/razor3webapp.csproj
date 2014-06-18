@@ -105,6 +105,7 @@
     <Content Include="Content\css\orchard-scaffolding.css" />
     <Content Include="Content\css\orchard-show-elements.css" />
     <Content Include="Content\css\orchard-structure.css" />
+    <Content Include="Content\css\orchard-why-orchard.css" />
     <Content Include="Content\css\orchard.css" />
     <Content Include="Content\css\partners.css" />
     <Content Include="Content\css\site.css" />
@@ -268,6 +269,7 @@
     <Content Include="Content\site\orchard-mixins.less" />
     <Content Include="Content\site\orchard-latest-post.less" />
     <Content Include="Content\site\orchard-features.less" />
+    <Content Include="Content\site\orchard-why-orchard.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -282,6 +284,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\orchard.js" />
     <Content Include="sitemap.cshtml" />
     <Content Include="support.cshtml" />
     <Content Include="terms-of-use.cshtml" />
