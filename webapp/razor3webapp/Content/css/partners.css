@@ -1,0 +1,5 @@
+@media (min-width: 992px) {
+  #carousel-partners [class="col-md-4"]:first-child {
+    background: red;
+  }
+}
