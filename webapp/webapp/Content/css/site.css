@@ -2,24 +2,24 @@ header {
   margin-top: 60px;
   padding-bottom: 20px;
   margin-bottom: 40px;
-  border-bottom: thin solid #bfbfbf;
+  border-bottom: thin solid #a0aa8e;
 }
 section {
   padding-bottom: 60px;
 }
 section {
-  background-color: #dadada;
+  background-color: #d1d6c8;
   min-height: 20px;
 }
 section:nth-child(2n) {
-  background-color: #cccccc;
+  background-color: #b9c0ab;
 }
 #latest-post {
-  background-color: #9d9b9b;
+  background-color: #889570;
   color: white;
 }
 .nav.navbar-nav.navbar-right li:last-child a {
-  background: #bfbfbf;
+  background: #a0aa8e;
   padding: 2px 5px;
   margin-top: 25px;
 }
@@ -66,7 +66,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #cccccc;
+  color: #b9c0ab;
 }
 h1,
 .h1,
@@ -172,7 +172,7 @@ cite {
   text-align: justify;
 }
 .text-muted {
-  color: #cccccc;
+  color: #b9c0ab;
 }
 .text-primary {
   color: #428bca;
@@ -238,7 +238,7 @@ a.bg-danger:hover {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #d1d6c8;
 }
 ul,
 ol {
@@ -296,7 +296,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #cccccc;
+  border-bottom: 1px dotted #b9c0ab;
 }
 .initialism {
   font-size: 90%;
@@ -306,7 +306,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #dadada;
+  border-left: 5px solid #d1d6c8;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -319,7 +319,7 @@ blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.42857143;
-  color: #cccccc;
+  color: #b9c0ab;
 }
 blockquote footer:before,
 blockquote small:before,
@@ -330,7 +330,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #dadada;
+  border-right: 5px solid #d1d6c8;
   border-left: 0;
   text-align: right;
 }
@@ -491,7 +491,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #dadada;
+  border-top: 1px solid #d1d6c8;
 }
 .sr-only {
   position: absolute;
@@ -521,26 +521,26 @@ figure figcaption {
   margin-top: 20px;
   line-height: 14px;
 }
-footer {
-  padding-top: 30px;
-  background-color: #dadada;
+footer#global-footer {
+  padding: 30px 0;
+  background-color: #d1d6c8;
 }
-footer ul {
+footer#global-footer ul {
   text-transform: uppercase;
   padding-left: 0;
   list-style: none;
   margin-top: 15px;
 }
-footer ul li {
+footer#global-footer ul li {
   margin-bottom: 15px;
 }
-footer ul li img {
+footer#global-footer ul li img {
   height: 25px;
 }
-footer ul ul {
+footer#global-footer ul ul {
   text-transform: capitalize;
   font-size: 12px;
-  color: #636363;
+  color: #6e785a;
 }
 .clearfix:before,
 .clearfix:after {
@@ -612,6 +612,14 @@ body.show [class*="col-md-"] {
 }
 a {
   color: #000000;
+}
+.nav.nav-pills a {
+  background-color: #6e785a;
+  color: white;
+}
+.nav.nav-pills.nav-justified > li > a {
+  margin-left: 4px;
+  margin-right: 4px;
 }
 img {
   display: block;

@@ -41,7 +41,7 @@ h6 .small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
-  color: #cccccc;
+  color: #b9c0ab;
 }
 h1,
 .h1,
@@ -147,7 +147,7 @@ cite {
   text-align: justify;
 }
 .text-muted {
-  color: #cccccc;
+  color: #b9c0ab;
 }
 .text-primary {
   color: #428bca;
@@ -213,7 +213,7 @@ a.bg-danger:hover {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #d1d6c8;
 }
 ul,
 ol {
@@ -271,7 +271,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1px dotted #cccccc;
+  border-bottom: 1px dotted #b9c0ab;
 }
 .initialism {
   font-size: 90%;
@@ -281,7 +281,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #dadada;
+  border-left: 5px solid #d1d6c8;
 }
 blockquote p:last-child,
 blockquote ul:last-child,
@@ -294,7 +294,7 @@ blockquote .small {
   display: block;
   font-size: 80%;
   line-height: 1.42857143;
-  color: #cccccc;
+  color: #b9c0ab;
 }
 blockquote footer:before,
 blockquote small:before,
@@ -305,7 +305,7 @@ blockquote .small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #dadada;
+  border-right: 5px solid #d1d6c8;
   border-left: 0;
   text-align: right;
 }
@@ -334,24 +334,24 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
-footer {
-  padding-top: 30px;
-  background-color: #dadada;
+footer#global-footer {
+  padding: 30px 0;
+  background-color: #d1d6c8;
 }
-footer ul {
+footer#global-footer ul {
   text-transform: uppercase;
   padding-left: 0;
   list-style: none;
   margin-top: 15px;
 }
-footer ul li {
+footer#global-footer ul li {
   margin-bottom: 15px;
 }
-footer ul li img {
+footer#global-footer ul li img {
   height: 25px;
 }
-footer ul ul {
+footer#global-footer ul ul {
   text-transform: capitalize;
   font-size: 12px;
-  color: #636363;
+  color: #6e785a;
 }

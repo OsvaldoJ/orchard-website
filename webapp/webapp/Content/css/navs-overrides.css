@@ -1,0 +1,8 @@
+.nav.nav-pills a {
+  background-color: #6e785a;
+  color: white;
+}
+.nav.nav-pills.nav-justified > li > a {
+  margin-left: 4px;
+  margin-right: 4px;
+}

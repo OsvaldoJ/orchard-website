@@ -7,11 +7,13 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-darker:            #636363; // lighten(#000, 13.5%); // #222
-@gray-dark:              #9d9b9b; // lighten(#000, 20%);   // #333
-@gray:                   #BFBFBF; // lighten(#000, 33.5%); // #555
-@gray-light:             #CCCCCC; // lighten(#000, 60%);   // #999
-@gray-lighter:           #DADADA; // lighten(#000, 93.5%); // #eee
+@grayscale-to-color:    #535b44;
+
+@gray-darker:            lighten(@grayscale-to-color, 10%); 
+@gray-dark:              lighten(@grayscale-to-color, 20%);   
+@gray:                   lighten(@grayscale-to-color, 30%); 
+@gray-light:             lighten(@grayscale-to-color, 40%);   
+@gray-lighter:           lighten(@grayscale-to-color, 50%);
 
 @brand-primary:         #428bca;
 @brand-success:         #5cb85c;
@@ -388,7 +390,7 @@
 //##
 
 //=== Shared nav styles
-@nav-link-padding:                          10px 15px;
+@nav-link-padding:                          2px 15px;
 @nav-link-hover-bg:                         @gray-lighter;
 
 @nav-disabled-link-color:                   @gray-light;
@@ -409,7 +411,7 @@
 @nav-tabs-justified-active-link-border-color:     @body-bg;
 
 //== Pills
-@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-border-radius:                   0;
 @nav-pills-active-link-hover-bg:            @component-active-bg;
 @nav-pills-active-link-hover-color:         @component-active-color;
 
