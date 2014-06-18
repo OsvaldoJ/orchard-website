@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\background.css" />
     <Content Include="Content\css\banner.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\figures.css" />
@@ -64,6 +65,7 @@
     <Content Include="Content\css\navs-overrides.css" />
     <Content Include="Content\css\partners.css" />
     <Content Include="Content\css\site.css" />
+    <Content Include="Content\css\structure.css" />
     <Content Include="Content\css\variables.css" />
     <Content Include="Content\site\carousel-overrides.css">
       <DependentUpon>carousel-overrides.less</DependentUpon>

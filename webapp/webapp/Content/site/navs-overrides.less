@@ -3,12 +3,37 @@
 .nav.nav-pills {
     a {
         background-color: @gray-darker;
-        color: white;        
+        color: white;
     }
 
-    &.nav-justified > li > a
-        {
-        margin-left:4px;
-        margin-right:4px;
+    &.nav-justified > li > a {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}
+
+@media(max-width:950px) {
+    .navbar {
+
+        .navbar-brand {
+            font-size: 15px;
+            padding-left:5px;
+        }
+
+        ul li {
+
+            a {
+                padding-left: 4px;
+                padding-right: 4px;
+            }
+
+            &:first-child a {
+                padding-left: 0;
+            }
+
+            &:last-child a {
+                padding-right: 0;
+            }
+        }
     }
 }
