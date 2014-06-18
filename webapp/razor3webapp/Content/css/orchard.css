@@ -7380,7 +7380,6 @@ header h5 {
 .double-spaced {
   line-height: 2.5;
 }
-/*#region mixins */
 /*#endregion*/
 #banner,
 #banner ul,
@@ -7391,12 +7390,6 @@ header h5 {
 }
 #banner .banner-inner {
   position: relative;
-}
-#banner .carousel-indicators {
-  left: 5px;
-  margin: 0;
-  text-align: left;
-  top: 5px;
 }
 #banner .caption {
   display: table;
@@ -7420,6 +7413,11 @@ header h5 {
 #banner .caption .caption-body ul {
   padding-left: 25px;
 }
+@media (max-width: 768px) {
+  .carousel-indicators {
+    bottom: 175px;
+  }
+}
 @media (min-width: 768px) {
   #banner {
     text-align: center;
@@ -7437,8 +7435,7 @@ header h5 {
     margin-top: -137.5px;
     position: absolute;
     top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(0, 0, 0, 0);
     display: block;
     font-size: 18px;
     left: 5%;
