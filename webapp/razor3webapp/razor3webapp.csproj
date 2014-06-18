@@ -145,11 +145,11 @@
     <Content Include="Content\site\type.css">
       <DependentUpon>type.less</DependentUpon>
     </Content>
-    <None Include="customers.cshtml" />
-    <None Include="documentation.cshtml" />
-    <None Include="download.cshtml" />
-    <None Include="features.cshtml" />
-    <None Include="index.cshtml" />
+    <Content Include="customers.cshtml" />
+    <Content Include="documentation.cshtml" />
+    <Content Include="download.cshtml" />
+    <Content Include="features.cshtml" />
+    <Content Include="index.cshtml" />
     <Content Include="packages.config" />
     <Content Include="Content\bootstrap\alerts.less" />
     <Content Include="Content\bootstrap\badges.less" />
