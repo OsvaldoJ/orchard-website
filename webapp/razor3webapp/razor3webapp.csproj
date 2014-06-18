@@ -98,7 +98,12 @@
     <Content Include="Content\css\mixins.css" />
     <Content Include="Content\css\navs-overrides.css" />
     <Content Include="Content\css\orchard-background.css" />
+    <Content Include="Content\css\orchard-banner.css" />
+    <Content Include="Content\css\orchard-carousel.css" />
     <Content Include="Content\css\orchard-latest-post.css" />
+    <Content Include="Content\css\orchard-mixins.css" />
+    <Content Include="Content\css\orchard-scaffolding.css" />
+    <Content Include="Content\css\orchard-show-elements.css" />
     <Content Include="Content\css\orchard.css" />
     <Content Include="Content\css\partners.css" />
     <Content Include="Content\css\site.css" />
@@ -137,9 +142,6 @@
     <Content Include="Content\site\imgs\partner-square-teamcity.PNG" />
     <Content Include="Content\site\imgs\screenshot.png" />
     <Content Include="Content\site\imgs\uncorn.jpg" />
-    <Content Include="Content\site\orchard-scaffolding.css">
-      <DependentUpon>orchard-scaffolding.less</DependentUpon>
-    </Content>
     <Content Include="Content\site\orchard-show-elements.css">
       <DependentUpon>orchard-show-elements.less</DependentUpon>
     </Content>
@@ -228,10 +230,6 @@
     <Content Include="Content\site\imgs\Thumbs.db" />
     <Content Include="Content\site\orchard-navs.less" />
     <Content Include="Content\site\orchard-partners.less" />
-    <Content Include="Content\site\orchard-scaffolding.less" />
-    <Content Include="Content\site\orchard-scaffolding.css.map">
-      <DependentUpon>orchard-scaffolding.css</DependentUpon>
-    </Content>
     <Content Include="Content\site\orchard-show-elements.less" />
     <Content Include="Content\site\orchard-show-elements.css.map">
       <DependentUpon>orchard-show-elements.css</DependentUpon>

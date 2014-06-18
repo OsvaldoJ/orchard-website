@@ -1,6 +1,6 @@
 ﻿@import "../bootstrap/variables.less";
 @import "../bootstrap/mixins.less";
-@import "../bootstrap/type.less";
+@import "orchard-mixins.less";
 
 /*#region mixins */
 
@@ -14,8 +14,8 @@
 }
 
 .center-child-inline-block() {
-    text-align: center;
     // http://stackoverflow.com/questions/1833734/display-inline-block-extra-margin
+    text-align: center;
     font-size: 0;
     letter-spacing: 0;
     word-spacing: 0;
@@ -26,7 +26,7 @@
 #banner {
 
     &, ul, h1 {
-        /*reset*/
+        // reset
         margin: 0;
         padding-bottom: 0;
         padding-top: 0;
@@ -40,7 +40,7 @@
         left: 5px;
         margin: 0;
         text-align: left;
-        top:5px;
+        top: 5px;
     }
 
     .caption {

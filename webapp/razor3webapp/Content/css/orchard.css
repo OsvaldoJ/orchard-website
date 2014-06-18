@@ -7358,9 +7358,6 @@ section {
 section:nth-child(2n) {
   background-color: #85c4fb;
 }
-html {
-  color: black;
-}
 h1,
 h2,
 h3,
@@ -7388,7 +7385,6 @@ header h5 {
 #banner,
 #banner ul,
 #banner h1 {
-  /*reset*/
   margin: 0;
   padding-bottom: 0;
   padding-top: 0;
@@ -7538,9 +7534,6 @@ body.show [class*="col-md-"] {
 }
 .carousel-control.right {
   right: -15px;
-}
-a {
-  color: #000000;
 }
 .nav.nav-pills a {
   background-color: #6cb8fa;
