@@ -7423,6 +7423,10 @@ section:nth-child(2n) {
     position: static;
   }
 }
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
 .carousel-control.left span,
 .carousel-control.right span {
   height: 60px;
@@ -7570,6 +7574,9 @@ header h5 {
 }
 .double-spaced {
   line-height: 2.5;
+}
+#why-orchard ol li {
+  width: 150px;
 }
 #why-orchard ol li.active {
   font-weight: bold;

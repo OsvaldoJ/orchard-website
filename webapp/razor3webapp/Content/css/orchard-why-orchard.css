@@ -1,3 +1,6 @@
+#why-orchard ol li {
+  width: 150px;
+}
 #why-orchard ol li.active {
   font-weight: bold;
 }
