@@ -1,0 +1,6 @@
+section {
+  background-color: #9ed0fb;
+}
+section:nth-child(2n) {
+  background-color: #85c4fb;
+}

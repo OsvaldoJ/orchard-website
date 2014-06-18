@@ -1,36 +1,25 @@
 ﻿@import "../bootstrap/variables.less";
 @import "../bootstrap/mixins.less";
 @import "../font-awesome/font-awesome.less";
+@import "orchard-mixins.less";
 
 .carousel-control {
 
     &.left, &.right {
 
         span {
-            // position center with font awesome fa-3x
-            margin-top: -30px;
-            top: 50%;
-            position: absolute;
+            // horizontal center font-awesome fa-3x controls
+            .absolute-center-vertical(60px);
+            .absolute-center-horizontal(20px);
         }
     }
 
     &.left {
         // offset container padding
-        left: -15px;
-
-        span {
-            // center absolute within parent
-            margin-left: -10px;
-            left: 50%;
-        }
+        left: -@grid-gutter-width / 2;
     }
 
     &.right {
-        right: -15px;
-
-        span {
-            margin-right: -10px;
-            right: 50%;
-        }
+        right: -@grid-gutter-width / 2;
     }
 }

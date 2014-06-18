@@ -97,6 +97,8 @@
     <Content Include="Content\css\footer.css" />
     <Content Include="Content\css\mixins.css" />
     <Content Include="Content\css\navs-overrides.css" />
+    <Content Include="Content\css\orchard-background.css" />
+    <Content Include="Content\css\orchard-latest-post.css" />
     <Content Include="Content\css\orchard.css" />
     <Content Include="Content\css\partners.css" />
     <Content Include="Content\css\site.css" />
@@ -265,6 +267,7 @@
     <Content Include="Content\font-awesome\stacked.less" />
     <Content Include="Content\font-awesome\variables.less" />
     <Content Include="Content\site\orchard-mixins.less" />
+    <Content Include="Content\site\orchard-latest-post.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

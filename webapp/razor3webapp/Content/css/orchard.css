@@ -7358,10 +7358,6 @@ section {
 section:nth-child(2n) {
   background-color: #85c4fb;
 }
-#latest-post {
-  background-color: #54adf9;
-  color: white;
-}
 html {
   color: black;
 }
@@ -7460,6 +7456,10 @@ header h5 {
     position: static;
   }
 }
+#latest-post {
+  background-color: #54adf9;
+  color: white;
+}
 figure img {
   display: block;
   margin-left: auto;
@@ -7525,23 +7525,19 @@ body.show [class*="col-md-"] {
 }
 .carousel-control.left span,
 .carousel-control.right span {
+  height: 60px;
   margin-top: -30px;
   top: 50%;
+  height: 20px;
+  margin-left: -10px;
   position: absolute;
+  left: 50%;
 }
 .carousel-control.left {
   left: -15px;
 }
-.carousel-control.left span {
-  margin-left: -10px;
-  left: 50%;
-}
 .carousel-control.right {
   right: -15px;
-}
-.carousel-control.right span {
-  margin-right: -10px;
-  right: 50%;
 }
 a {
   color: #000000;
