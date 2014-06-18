@@ -1,36 +1,86 @@
 ﻿@import "../bootstrap/variables.less";
 @import "../bootstrap/mixins.less";
+@import "../bootstrap/type.less";
 
 #banner {
-    padding: 0;
 
-    @media(min-width:@screen-lg-min) {
-        .banner-inner {
-            display: table;
-            margin-left: auto;
-            margin-right: auto;
-            position: relative;
-        }
+    .banner-inner {
+        position: relative;
+    }
 
-        .banner-caption {
-            h1 {
-                font-size: 72px;
-            }
-            position: absolute;
-            height: 300px;
-            width: 600px;
-            top: 50%;
-            margin-top: -200px;
-            left: 100px;
-        }
+    &, ul, h1 {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin: 0;
     }
 
     .banner-caption {
-        background-color: black;
-        .opacity(0.95);
-        color: white;
-        padding: 10px;
-        font-size: @font-size-large;
-    }
 
+        @caption-height: 175px;
+        @caption-padding: 10px;
+
+        height: @caption-height;
+        padding: @caption-padding;
+
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: @font-size-h3;
+            line-height: @line-height-base;
+            color: white;
+        }
+
+        ul {
+            padding-left: 15px;
+        }
+    }
+}
+
+@media(min-width:@screen-sm-min) {
+
+    #banner {
+        text-align: center;
+
+        // http://stackoverflow.com/questions/1833734/display-inline-block-extra-margin
+        letter-spacing: 0;
+        word-spacing: 0;
+        font-size: 0;
+
+        .banner-inner {
+            display: inline-block;
+            max-width: 100%;
+            position: relative;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .banner-caption {
+
+            @caption-height: 275px;
+
+            color: black;
+            background-color: white;
+            .opacity(0.6);
+            font-size: @font-size-large;
+            text-align: left;
+            position: absolute;
+            width: 500px;
+            height: @caption-height;
+            top: 50%;
+            margin-top: -@caption-height / 2;
+            left: 5%;
+
+            h1 {
+                line-height: 72px;
+                font-size: 72px;
+                position: static;
+                margin: auto;
+                height: auto;
+                color: black;
+            }
+        }
+    }
 }

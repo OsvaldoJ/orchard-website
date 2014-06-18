@@ -1,0 +1,13 @@
+.container-fluid {
+  max-width: 1170px;
+}
+header {
+  margin-top: 60px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: thin solid #6cb8fa;
+}
+section {
+  padding-bottom: 60px;
+}
+/*# sourceMappingURL=structure.css.map */
