@@ -2,84 +2,104 @@
 @import "../bootstrap/mixins.less";
 @import "../bootstrap/type.less";
 
+/*#region mixins */
+
+.banner-overlay() {
+    color: black;
+    background-color: white;
+    .opacity(0.6);
+}
+
+.clear-banner-overlay() {
+    .opacity(1);
+}
+
+.center-child-inline-block() {
+    text-align: center;
+    // http://stackoverflow.com/questions/1833734/display-inline-block-extra-margin
+    font-size: 0;
+    letter-spacing: 0;
+    word-spacing: 0;
+}
+
+.absolute-center-vertical(@height) {
+    height: @height;
+    margin-top: -@height / 2;
+    position: absolute;
+    top: 50%;
+}
+
+/*#endregion*/
+
 #banner {
+
+    &, ul, h1 {
+        /*reset*/
+        margin: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
 
     .banner-inner {
         position: relative;
     }
 
-    &, ul, h1 {
-        padding-top: 0;
-        padding-bottom: 0;
-        margin: 0;
-    }
-
-    .banner-caption {
+    .caption {
 
         @caption-height: 175px;
         @caption-padding: 10px;
 
+        display: table; // for vertical centering
         height: @caption-height;
         padding: @caption-padding;
 
         h1 {
-            position: absolute;
-            top: 0;
-            left: 0;
+            .banner-overlay();
+            bottom: @caption-height;
             font-size: @font-size-h3;
+            left: 0;
             line-height: @line-height-base;
-            color: white;
+            position: absolute;
+            width: 100%;
         }
 
-        ul {
-            padding-left: 15px;
+        .caption-body {
+            display: table-cell; // for vertical centering
+            vertical-align: middle;
+
+            ul {
+                padding-left: 15px;
+            }
         }
     }
 }
 
 @media(min-width:@screen-sm-min) {
 
-    #banner {
-        text-align: center;
+    @caption-height: 275px;
 
-        // http://stackoverflow.com/questions/1833734/display-inline-block-extra-margin
-        letter-spacing: 0;
-        word-spacing: 0;
-        font-size: 0;
+    #banner {
+        .center-child-inline-block();
 
         .banner-inner {
-            display: inline-block;
-            max-width: 100%;
-            position: relative;
+            display: inline-block; // shrink wrap image
+            max-width: 100%; // prevent oversize
+            position: relative; // allow absolute positioning inside
+            .caption {
+                .absolute-center-vertical(@caption-height);
+                .banner-overlay();
+                display: block;
+                font-size: @font-size-large;
+                left: 5%;
+                text-align: left;
+                width: 500px;
 
-            img {
-                max-width: 100%;
-            }
-        }
-
-        .banner-caption {
-
-            @caption-height: 275px;
-
-            color: black;
-            background-color: white;
-            .opacity(0.6);
-            font-size: @font-size-large;
-            text-align: left;
-            position: absolute;
-            width: 500px;
-            height: @caption-height;
-            top: 50%;
-            margin-top: -@caption-height / 2;
-            left: 5%;
-
-            h1 {
-                line-height: 72px;
-                font-size: 72px;
-                position: static;
-                margin: auto;
-                height: auto;
-                color: black;
+                h1 {
+                    .clear-banner-overlay();
+                    font-size: 72px;
+                    line-height: 72px;
+                    position: static;
+                }
             }
         }
     }

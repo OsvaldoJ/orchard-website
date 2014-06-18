@@ -334,66 +334,75 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
-#banner .banner-inner {
-  position: relative;
-}
+/*#region mixins */
+/*#endregion*/
 #banner,
 #banner ul,
 #banner h1 {
-  padding-top: 0;
-  padding-bottom: 0;
+  /*reset*/
   margin: 0;
+  padding-bottom: 0;
+  padding-top: 0;
 }
-#banner .banner-caption {
+#banner .banner-inner {
+  position: relative;
+}
+#banner .caption {
+  display: table;
   height: 175px;
   padding: 10px;
 }
-#banner .banner-caption h1 {
-  position: absolute;
-  top: 0;
-  left: 0;
+#banner .caption h1 {
+  color: black;
+  background-color: white;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  bottom: 175px;
   font-size: 24px;
+  left: 0;
   line-height: 1.42857143;
-  color: white;
+  position: absolute;
+  width: 100%;
 }
-#banner .banner-caption ul {
+#banner .caption .caption-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+#banner .caption .caption-body ul {
   padding-left: 15px;
 }
 @media (min-width: 768px) {
   #banner {
     text-align: center;
+    font-size: 0;
     letter-spacing: 0;
     word-spacing: 0;
-    font-size: 0;
   }
   #banner .banner-inner {
     display: inline-block;
     max-width: 100%;
     position: relative;
   }
-  #banner .banner-inner img {
-    max-width: 100%;
-  }
-  #banner .banner-caption {
+  #banner .banner-inner .caption {
+    height: 275px;
+    margin-top: -137.5px;
+    position: absolute;
+    top: 50%;
     color: black;
     background-color: white;
     opacity: 0.6;
     filter: alpha(opacity=60);
+    display: block;
     font-size: 18px;
-    text-align: left;
-    position: absolute;
-    width: 500px;
-    height: 275px;
-    top: 50%;
-    margin-top: -137.5px;
     left: 5%;
+    text-align: left;
+    width: 500px;
   }
-  #banner .banner-caption h1 {
-    line-height: 72px;
+  #banner .banner-inner .caption h1 {
+    opacity: 1;
+    filter: alpha(opacity=100);
     font-size: 72px;
+    line-height: 72px;
     position: static;
-    margin: auto;
-    height: auto;
-    color: black;
   }
 }
