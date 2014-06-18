@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.html" />
     <Content Include="Content\css\background.css" />
     <Content Include="Content\css\banner.css" />
     <Content Include="Content\css\bootstrap.css" />
@@ -146,6 +147,10 @@
     <Content Include="Content\site\type.css">
       <DependentUpon>type.less</DependentUpon>
     </Content>
+    <Content Include="customers.html" />
+    <Content Include="documentation.html" />
+    <Content Include="download.html" />
+    <Content Include="features.html" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
@@ -221,11 +226,13 @@
       <DependentUpon>structure.css</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="partners.html" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="support.html" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
