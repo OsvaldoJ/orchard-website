@@ -91,13 +91,16 @@
     <Content Include="Content\css\background.css" />
     <Content Include="Content\css\banner.css" />
     <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\carousel-overrides.css" />
     <Content Include="Content\css\figures.css" />
+    <Content Include="Content\css\font-awesome.css" />
     <Content Include="Content\css\footer.css" />
     <Content Include="Content\css\navs-overrides.css" />
     <Content Include="Content\css\partners.css" />
     <Content Include="Content\css\site.css" />
     <Content Include="Content\css\structure.css" />
     <Content Include="Content\css\variables.css" />
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\site\background.css">
       <DependentUpon>background.less</DependentUpon>
@@ -242,6 +245,23 @@
       <DependentUpon>type.css</DependentUpon>
     </Content>
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\font-awesome\bordered-pulled.less" />
+    <Content Include="Content\font-awesome\core.less" />
+    <Content Include="Content\font-awesome\fixed-width.less" />
+    <Content Include="Content\font-awesome\font-awesome.less" />
+    <Content Include="Content\font-awesome\icons.less" />
+    <Content Include="Content\font-awesome\larger.less" />
+    <Content Include="Content\font-awesome\list.less" />
+    <Content Include="Content\font-awesome\mixins.less" />
+    <Content Include="Content\font-awesome\path.less" />
+    <Content Include="Content\font-awesome\rotated-flipped.less" />
+    <Content Include="Content\font-awesome\spinning.less" />
+    <Content Include="Content\font-awesome\stacked.less" />
+    <Content Include="Content\font-awesome\variables.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,8 +1,45 @@
 ﻿@import "../bootstrap/variables.less";
 @import "../bootstrap/mixins.less";
+@import "../font-awesome/font-awesome.less";
+
+section div,
+.carousel,
+.carousel-control {
+    // make carousel controls hide swooshing content
+    // by having children inherit the sections color
+    background-color: inherit;
+}
 
 .carousel-control {
+
     &.left, &.right {
         background-image: none;
+        z-index: 1000;
+
+        span {
+            margin-top: -30px;
+            top: 50%;
+            position: absolute;
+        }
+    }
+
+    &.left {
+        // offset container padding
+        left: -15px;
+
+        span {
+            // center absolute within parent
+            margin-left: -10px;
+            left: 50%;
+        }
+    }
+
+    &.right {
+        right: -15px;
+
+        span {
+            margin-right: -10px;
+            right: 50%;
+        }
     }
 }
