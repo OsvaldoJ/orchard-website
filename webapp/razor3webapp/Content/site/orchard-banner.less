@@ -1,14 +1,10 @@
-﻿@import "../bootstrap/variables.less";
-@import "../bootstrap/mixins.less";
-@import "orchard-mixins.less";
-
-#banner-overlay {
-    .add() {
+﻿#banner-overlay {
+    .add {
         background-color: rgba(0,0,0,0.5);
         color: white;
     }
 
-    .remove() {
+    .remove {
         background-color: rgba(0,0,0,0);
     }
 }
@@ -30,8 +26,6 @@
     .banner-inner {
         position: relative;
     }
-
-
 
     .caption {
         display: table; // for vertical centering
@@ -77,8 +71,8 @@
             max-width: 100%; // prevent oversize
             position: relative; // allow absolute positioning inside
             .caption {
+                #banner-overlay > .add();
                 .absolute-center-vertical(@caption-height);
-                #banner-overlay > .remove();
                 display: block;
                 font-size: @font-size-large;
                 left: 5%;
