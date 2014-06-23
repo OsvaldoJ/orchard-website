@@ -53,12 +53,6 @@
     }
 }
 
-@media(max-width:@screen-sm-min) {
-    .carousel-indicators {
-        bottom: @caption-height;
-    }
-}
-
 @media(min-width:@screen-sm-min) {
 
     @caption-height: 275px;
@@ -87,5 +81,14 @@
                 }
             }
         }
+    }
+}
+
+@media(max-width:(@screen-sm-min - 1)) {
+    #banner .carousel-indicators {
+        bottom: (@caption-height - 3px);
+        text-align: right;
+        right: 5%;
+        width: auto;
     }
 }

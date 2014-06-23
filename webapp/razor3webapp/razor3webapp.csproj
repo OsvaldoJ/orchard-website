@@ -270,6 +270,7 @@
     <Content Include="Content\site\orchard-latest-post.less" />
     <Content Include="Content\site\orchard-features.less" />
     <Content Include="Content\site\orchard-why-orchard.less" />
+    <Content Include="community.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
