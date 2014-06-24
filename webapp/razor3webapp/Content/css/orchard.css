@@ -7340,11 +7340,35 @@ button.close {
 .fa-bomb:before {
   content: "\f1e2";
 }
-section {
+body > section {
   background-color: #9ed0fb;
 }
-section:nth-child(2n) {
+body > section:nth-child(2n) {
   background-color: #85c4fb;
+}
+header.background-flag {
+  background-image: url(../site/imgs/background-flag.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #3ba1f8;
+  text-align: center;
+  height: 45px;
+  width: 320px;
+}
+header.background-flag h1,
+header.background-flag h2,
+header.background-flag h3,
+header.background-flag h4,
+header.background-flag h5,
+header.background-flag h6 {
+  color: white;
+  font-style: italic;
+  text-transform: none;
+  font-family: serif;
+  line-height: 45px;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: normal;
 }
 #banner-overlay .add {
   background-color: rgba(0, 0, 0, 0.5);
@@ -7493,6 +7517,10 @@ footer#global-footer ul ul {
   color: white;
   padding: 20px;
 }
+.nav a,
+.navbar a {
+  text-decoration: none;
+}
 .nav.nav-pills a {
   background-color: #6cb8fa;
   color: white;
@@ -7547,10 +7575,24 @@ body.show [class*="col-md-"] {
   max-width: 1170px;
 }
 header {
-  border-bottom: thin solid #6cb8fa;
   margin-bottom: 40px;
   margin-top: 60px;
   padding-bottom: 20px;
+}
+header.header-home-page {
+  text-align: center;
+}
+header.page-header {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+header.page-header h1,
+header.page-header h2,
+header.page-header h3,
+header.page-header h4,
+header.page-header h5,
+header.page-header h6 {
+  margin-bottom: 20px;
 }
 section {
   padding-bottom: 60px;
@@ -7569,9 +7611,6 @@ h6,
 nav {
   text-transform: uppercase;
 }
-header {
-  text-align: center;
-}
 header h1,
 header h2,
 header h3,
@@ -7582,9 +7621,141 @@ header h5 {
 .double-spaced {
   line-height: 2.5;
 }
+a {
+  text-decoration: underline;
+}
 #why-orchard ol li {
   width: 150px;
 }
 #why-orchard ol li.active {
   font-weight: bold;
+}
+article#download section {
+  border-bottom: thin solid #9ed0fb;
+}
+article#download header {
+  margin-top: 40px;
+}
+article#download .col-md-6:first-child {
+  border-right: thin solid #9ed0fb;
+}
+article#download figure {
+  width: 320px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+article#download figure header {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+article#download figure img {
+  border-radius: 50%;
+  width: 100px;
+}
+article#download figure figcaption {
+  margin-bottom: 0;
+}
+article#download figure figcaption h1,
+article#download figure figcaption h2,
+article#download figure figcaption h3,
+article#download figure figcaption h4,
+article#download figure figcaption h5,
+article#download figure figcaption h6 {
+  font-weight: bolder;
+  text-transform: none;
+}
+article#download figure button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+article#download figure button:focus,
+article#download figure button:active:focus,
+article#download figure button.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+article#download figure button:hover,
+article#download figure button:focus {
+  color: #333333;
+  text-decoration: none;
+}
+article#download figure button:active,
+article#download figure button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+article#download figure button.disabled,
+article#download figure button[disabled],
+fieldset[disabled] article#download figure button {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+article#download figure button:hover,
+article#download figure button:focus,
+article#download figure button:active,
+article#download figure button.active,
+.open .dropdown-togglearticle#download figure button {
+  color: #ffffff;
+  background-color: #39b3d7;
+  border-color: #269abc;
+}
+article#download figure button:active,
+article#download figure button.active,
+.open .dropdown-togglearticle#download figure button {
+  background-image: none;
+}
+article#download figure button.disabled,
+article#download figure button[disabled],
+fieldset[disabled] article#download figure button,
+article#download figure button.disabled:hover,
+article#download figure button[disabled]:hover,
+fieldset[disabled] article#download figure button:hover,
+article#download figure button.disabled:focus,
+article#download figure button[disabled]:focus,
+fieldset[disabled] article#download figure button:focus,
+article#download figure button.disabled:active,
+article#download figure button[disabled]:active,
+fieldset[disabled] article#download figure button:active,
+article#download figure button.disabled.active,
+article#download figure button[disabled].active,
+fieldset[disabled] article#download figure button.active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+article#download figure button .badge {
+  color: #5bc0de;
+  background-color: #ffffff;
 }

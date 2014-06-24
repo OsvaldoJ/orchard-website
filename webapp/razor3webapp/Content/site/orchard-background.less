@@ -1,10 +1,33 @@
 ﻿@import "../bootstrap/variables.less";
 @import "../bootstrap/mixins.less";
 
-section {
+body > section {
     background-color: @gray-lighter;
 }
 
-section:nth-child(2n) {
+body > section:nth-child(2n) {
     background-color: @gray-light;
+}
+
+header {
+    &.background-flag {
+        background-image: url("../site/imgs/background-flag.PNG");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: @gray-darker;
+        text-align: center;
+        height: 45px;
+        width: 320px;
+
+        h1, h2, h3, h4, h5, h6 {
+            color: white;
+            font-style: italic;
+            text-transform: none;
+            font-family: serif;
+            line-height: 45px;
+            vertical-align: middle;
+            font-size: 20px;
+            font-weight: normal;
+        }
+    }
 }

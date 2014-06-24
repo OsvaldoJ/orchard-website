@@ -1,6 +1,30 @@
-section {
+﻿body > section {
   background-color: #9ed0fb;
 }
-section:nth-child(2n) {
+body > section:nth-child(2n) {
   background-color: #85c4fb;
+}
+header.background-flag {
+  background-image: url(../site/imgs/background-flag.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #3ba1f8;
+  text-align: center;
+  height: 45px;
+  width: 320px;
+}
+header.background-flag h1,
+header.background-flag h2,
+header.background-flag h3,
+header.background-flag h4,
+header.background-flag h5,
+header.background-flag h6 {
+  color: white;
+  font-style: italic;
+  text-transform: none;
+  font-family: serif;
+  line-height: 45px;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: normal;
 }

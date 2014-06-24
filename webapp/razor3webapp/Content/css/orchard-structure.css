@@ -1,11 +1,21 @@
-.container-fluid {
+﻿.container-fluid {
   max-width: 1170px;
 }
 header {
-  border-bottom: thin solid #6cb8fa;
   margin-bottom: 40px;
   margin-top: 60px;
   padding-bottom: 20px;
+}
+header.page-header {
+  padding-bottom: 40px;
+}
+header.page-header h1,
+header.page-header h2,
+header.page-header h3,
+header.page-header h4,
+header.page-header h5,
+header.page-header h6 {
+  margin-bottom: 20px;
 }
 section {
   padding-bottom: 60px;

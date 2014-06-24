@@ -100,6 +100,7 @@
     <Content Include="Content\css\orchard-background.css" />
     <Content Include="Content\css\orchard-banner.css" />
     <Content Include="Content\css\orchard-carousel.css" />
+    <Content Include="Content\css\orchard-download.css" />
     <Content Include="Content\css\orchard-latest-post.css" />
     <Content Include="Content\css\orchard-mixins.css" />
     <Content Include="Content\css\orchard-scaffolding.css" />
@@ -113,6 +114,8 @@
     <Content Include="Content\css\variables.css" />
     <Content Include="Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\site\imgs\background-flag.PNG" />
+    <Content Include="Content\site\imgs\download.png" />
     <Content Include="Content\site\orchard-background.css">
       <DependentUpon>orchard-background.less</DependentUpon>
     </Content>
@@ -271,6 +274,7 @@
     <Content Include="Content\site\orchard-features.less" />
     <Content Include="Content\site\orchard-why-orchard.less" />
     <Content Include="community.cshtml" />
+    <Content Include="Content\site\orchard-download.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

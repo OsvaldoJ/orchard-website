@@ -1,4 +1,10 @@
-﻿.nav.nav-pills {
+﻿.nav, .navbar {
+    a {
+        text-decoration: none;
+    }
+}
+
+.nav.nav-pills {
     a {
         background-color: @gray;
         color: white;
@@ -10,11 +16,10 @@
     }
 }
 
-.navbar ul li a span
-{
+.navbar ul li a span {
     .bg-info;
-    padding:4px;
-    display:-inline-block;
+    padding: 4px;
+    display: -inline-block;
 }
 
 @media(min-width:@screen-sm-min) and (max-width:1080px) {
@@ -28,7 +33,7 @@
 
             a {
                 font-size: 12px;
-                padding-left:6.5px;
+                padding-left: 6.5px;
                 padding-right: 0;
             }
         }

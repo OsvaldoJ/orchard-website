@@ -5,17 +5,27 @@
     max-width: @container-lg;
 }
 
-header
-{
-    border-bottom:thin solid @gray;
-    margin-bottom:40px;
-    margin-top:60px;
-    padding-bottom:20px;
+header {
+    margin-bottom: 40px;
+    margin-top: 60px;
+    padding-bottom: 20px;
+
+    &.header-home-page {
+        .text-center;
+    }
+
+    &.page-header {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 20px;
+        }
+    }
 }
 
-section
-{
-    padding-bottom:60px;
+section {
+    padding-bottom: 60px;
 }
 
 img {
