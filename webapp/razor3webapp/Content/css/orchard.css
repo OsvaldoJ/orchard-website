@@ -7352,8 +7352,10 @@ header.background-flag {
   background-size: contain;
   background-color: #3ba1f8;
   text-align: center;
-  height: 42.5px;
-  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
 }
 header.background-flag h1,
 header.background-flag h2,
@@ -7649,7 +7651,6 @@ article#download header {
   margin-top: 40px;
 }
 article#download figure {
-  width: 320px;
   display: block;
   margin-left: auto;
   margin-right: auto;
