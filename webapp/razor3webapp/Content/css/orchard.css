@@ -7347,7 +7347,7 @@ body > section:nth-child(2n) {
   background-color: #85c4fb;
 }
 header.background-flag {
-  background-image: url(../site/imgs/background-flag.PNG);
+  background-image: url(../../site/imgs/background-flag.PNG);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #3ba1f8;
@@ -7488,7 +7488,6 @@ figure img {
 }
 figure figcaption {
   margin-top: 20px;
-  margin-bottom: 40px;
   text-align: center;
 }
 footer#global-footer {
@@ -7602,6 +7601,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+figure {
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  figure {
+    margin-bottom: 0;
+  }
+}
 h1,
 h2,
 h3,
@@ -7630,14 +7637,16 @@ a {
 #why-orchard ol li.active {
   font-weight: bold;
 }
+@media (min-width: 992px) {
+  .vertical-rule {
+    border-right: thin solid #9ed0fb;
+  }
+}
 article#download section {
   border-bottom: thin solid #9ed0fb;
 }
 article#download header {
   margin-top: 40px;
-}
-article#download .vertical-rule {
-  border-right: thin solid #9ed0fb;
 }
 article#download figure {
   width: 320px;
@@ -7652,9 +7661,6 @@ article#download figure header {
 article#download figure img {
   border-radius: 50%;
   width: 100px;
-}
-article#download figure figcaption {
-  margin-bottom: 0;
 }
 article#download figure figcaption h1,
 article#download figure figcaption h2,

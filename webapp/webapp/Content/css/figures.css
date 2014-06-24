@@ -1,4 +1,4 @@
-* {
+﻿* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -423,6 +423,9 @@ address {
   font-style: normal;
   line-height: 1.42857143;
 }
+figure {
+  margin-bottom: 40px;
+}
 figure img {
   display: block;
   margin-left: auto;
@@ -430,14 +433,5 @@ figure img {
 }
 figure figcaption {
   margin-top: 20px;
-  margin-bottom: 40px;
   text-align: center;
-}
-#features figure img {
-  border-radius: 50%;
-  width: 75px;
-}
-#features figure figcaption {
-  margin-top: 20px;
-  line-height: 14px;
 }

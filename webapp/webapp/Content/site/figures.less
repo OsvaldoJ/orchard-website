@@ -4,25 +4,14 @@
 @import "../bootstrap/type.less";
 
 figure {
+    margin-bottom: 2 * @line-height-computed;
+
     img {
         .center-block;
     }
 
     figcaption {
         margin-top: @line-height-computed;
-        margin-bottom: 2 * @line-height-computed;
         .text-center;
-    }
-}
-
-#features figure {
-    img {
-        .img-circle;
-        width: 75px;
-    }
-
-    figcaption {
-        margin-top: @line-height-computed;
-        line-height: @line-height-computed * 0.7;
     }
 }
