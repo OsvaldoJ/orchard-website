@@ -7636,7 +7636,7 @@ article#download section {
 article#download header {
   margin-top: 40px;
 }
-article#download .col-md-6.vertical-rule {
+article#download .vertical-rule {
   border-right: thin solid #9ed0fb;
 }
 article#download figure {
