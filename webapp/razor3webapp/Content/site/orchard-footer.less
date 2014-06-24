@@ -12,6 +12,7 @@
 
             img {
                 height: 25px;
+                display: inline-block;
             }
         }
 
@@ -20,5 +21,11 @@
             font-size: @font-size-small;
             color: @text-color;
         }
+    }
+}
+
+@media(max-width:@screen-sm) {
+    footer#global-footer ul.odd {
+        text-align: right;
     }
 }

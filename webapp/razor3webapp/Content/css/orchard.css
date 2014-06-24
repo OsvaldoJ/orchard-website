@@ -7507,11 +7507,17 @@ footer#global-footer ul li {
 }
 footer#global-footer ul li img {
   height: 25px;
+  display: inline-block;
 }
 footer#global-footer ul ul {
   text-transform: capitalize;
   font-size: 12px;
   color: #000000;
+}
+@media (max-width: 768px) {
+  footer#global-footer ul.odd {
+    text-align: right;
+  }
 }
 #latest-post {
   background-color: #54adf9;

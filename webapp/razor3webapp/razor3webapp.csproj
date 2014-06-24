@@ -275,6 +275,7 @@
     <Content Include="Content\site\orchard-why-orchard.less" />
     <Content Include="community.cshtml" />
     <Content Include="Content\site\orchard-download.less" />
+    <Content Include="Content\site\utilities.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
