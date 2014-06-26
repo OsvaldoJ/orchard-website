@@ -1,0 +1,110 @@
+﻿article#community {
+
+    section {
+        border-bottom: thin solid @gray-lighter;
+        margin-left: 40px;
+    }
+
+    header {
+        margin-top: 40px;
+    }
+
+    figure {
+        .center-block;
+
+        header {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        img {
+            .img-circle;
+            width: 150px;
+        }
+
+        figcaption {
+
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: bolder;
+                text-transform: none;
+            }
+        }
+
+        button {
+            .btn;
+            .btn-info;
+            .btn-sm;
+            .center-block;
+        }
+    }
+
+    #links {
+        margin-top: 20px;
+        margin-left: 0;
+        border-bottom: none;
+
+        h4 {
+            margin-bottom: 20px;
+        }
+
+        h4.active {
+            font-weight: bolder;
+        }
+
+        img {
+            margin-bottom: 20px;
+        }
+    }
+
+    #popular-resources {
+        header {
+            margin-top: 0;
+        }
+    }
+
+    #community-blog {
+        header {
+            margin-bottom: 0;
+        }
+
+        ul.blogposts {
+            list-style: none;
+            padding-left: 0;
+
+            li.post {
+                margin-top: 30px;
+                padding-bottom: 20px;
+                border-bottom: thin solid @gray-lighter;
+
+                .meta {
+                    margin: 0;
+                }
+
+                h3 {
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                }
+
+                img {
+                    margin-bottom: 20px;
+                }
+
+                a.read-more {
+                    text-decoration: none;
+
+                    h5 {
+                        font-weight: bold;
+                    }
+                }
+
+                ul {
+                    padding-left: 15px;
+                }
+            }
+
+            li.post:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
