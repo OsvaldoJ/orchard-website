@@ -109,9 +109,6 @@
     <Content Include="Content\site\imgs\partner-square-teamcity.PNG" />
     <Content Include="Content\site\imgs\screenshot.png" />
     <Content Include="Content\site\imgs\carousel-main\unicorn1.jpg" />
-    <Content Include="Content\site\orchard.css">
-      <DependentUpon>orchard.less</DependentUpon>
-    </Content>
     <Content Include="customers.cshtml" />
     <Content Include="documentation.cshtml" />
     <Content Include="download.cshtml" />
@@ -175,9 +172,6 @@
     <Content Include="Content\site\_orchard-partners.less" />
     <Content Include="Content\site\_orchard-show-elements.less" />
     <Content Include="Content\site\orchard.less" />
-    <Content Include="Content\site\orchard.css.map">
-      <DependentUpon>orchard.css</DependentUpon>
-    </Content>
     <Content Include="Content\site\_orchard-structure.less" />
     <Content Include="Content\site\_orchard-type.less" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
