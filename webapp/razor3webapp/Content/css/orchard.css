@@ -7648,6 +7648,9 @@ a {
   .vertical-rule {
     border-right: thin solid #9ed0fb;
   }
+  .vertical-rule-left {
+    border-left: thin solid #9ed0fb;
+  }
 }
 article#download section {
   border-bottom: thin solid #9ed0fb;
@@ -7770,4 +7773,178 @@ fieldset[disabled] article#download figure button.active {
 article#download figure button .badge {
   color: #5bc0de;
   background-color: #ffffff;
+}
+article#community section {
+  border-bottom: thin solid #9ed0fb;
+  margin-left: 40px;
+}
+article#community header {
+  margin-top: 40px;
+}
+article#community figure {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+article#community figure header {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+article#community figure img {
+  border-radius: 50%;
+  width: 150px;
+}
+article#community figure figcaption h1,
+article#community figure figcaption h2,
+article#community figure figcaption h3,
+article#community figure figcaption h4,
+article#community figure figcaption h5,
+article#community figure figcaption h6 {
+  font-weight: bolder;
+  text-transform: none;
+}
+article#community figure button {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+article#community figure button:focus,
+article#community figure button:active:focus,
+article#community figure button.active:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+article#community figure button:hover,
+article#community figure button:focus {
+  color: #333333;
+  text-decoration: none;
+}
+article#community figure button:active,
+article#community figure button.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+article#community figure button.disabled,
+article#community figure button[disabled],
+fieldset[disabled] article#community figure button {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+article#community figure button:hover,
+article#community figure button:focus,
+article#community figure button:active,
+article#community figure button.active,
+.open .dropdown-togglearticle#community figure button {
+  color: #ffffff;
+  background-color: #39b3d7;
+  border-color: #269abc;
+}
+article#community figure button:active,
+article#community figure button.active,
+.open .dropdown-togglearticle#community figure button {
+  background-image: none;
+}
+article#community figure button.disabled,
+article#community figure button[disabled],
+fieldset[disabled] article#community figure button,
+article#community figure button.disabled:hover,
+article#community figure button[disabled]:hover,
+fieldset[disabled] article#community figure button:hover,
+article#community figure button.disabled:focus,
+article#community figure button[disabled]:focus,
+fieldset[disabled] article#community figure button:focus,
+article#community figure button.disabled:active,
+article#community figure button[disabled]:active,
+fieldset[disabled] article#community figure button:active,
+article#community figure button.disabled.active,
+article#community figure button[disabled].active,
+fieldset[disabled] article#community figure button.active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+article#community figure button .badge {
+  color: #5bc0de;
+  background-color: #ffffff;
+}
+article#community #links {
+  margin-top: 20px;
+  margin-left: 0;
+  border-bottom: none;
+}
+article#community #links h4 {
+  margin-bottom: 20px;
+}
+article#community #links h4.active {
+  font-weight: bolder;
+}
+article#community #links img {
+  margin-bottom: 20px;
+}
+article#community #popular-resources header {
+  margin-top: 0;
+}
+article#community #community-blog header {
+  margin-bottom: 0;
+}
+article#community #community-blog ul.blogposts {
+  list-style: none;
+  padding-left: 0;
+}
+article#community #community-blog ul.blogposts li.post {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  border-bottom: thin solid #9ed0fb;
+}
+article#community #community-blog ul.blogposts li.post .meta {
+  margin: 0;
+}
+article#community #community-blog ul.blogposts li.post h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+article#community #community-blog ul.blogposts li.post img {
+  margin-bottom: 20px;
+}
+article#community #community-blog ul.blogposts li.post a.read-more {
+  text-decoration: none;
+}
+article#community #community-blog ul.blogposts li.post a.read-more h5 {
+  font-weight: bold;
+}
+article#community #community-blog ul.blogposts li.post ul {
+  padding-left: 15px;
+}
+article#community #community-blog ul.blogposts li.post:last-child {
+  border-bottom: none;
 }
