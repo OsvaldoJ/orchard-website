@@ -1,4 +1,4 @@
-/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+﻿/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -2367,8 +2367,8 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('/Content/fonts/glyphicons-halflings-regular.eot');
+  src: url('/Content/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/Content/fonts/glyphicons-halflings-regular.woff') format('woff'), url('/Content/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/Content/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -5790,7 +5790,7 @@ body > section:nth-child(2n) {
   background-color: #7a9c1f;
 }
 header.background-flag {
-  background-image: url("../../site/imgs/background-flag.PNG");
+  background-image: url(../../imgs/background-flag.PNG);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #485d13;
