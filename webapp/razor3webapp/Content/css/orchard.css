@@ -5775,6 +5775,14 @@ button.close {
     display: none !important;
   }
 }
+@media (min-width: 992px) {
+  .vertical-rule {
+    border-right: thin solid #8ab124;
+  }
+  .vertical-rule-left {
+    border-left: thin solid #8ab124;
+  }
+}
 body > section {
   background-color: #8ab124;
 }
@@ -6086,14 +6094,6 @@ a {
 }
 #why-orchard ol li.active {
   font-weight: bold;
-}
-@media (min-width: 992px) {
-  .vertical-rule {
-    border-right: thin solid #8ab124;
-  }
-  .vertical-rule-left {
-    border-left: thin solid #8ab124;
-  }
 }
 article#download section {
   border-bottom: thin solid #8ab124;

@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "file": "show.css",
-  "sources": [
-    "show.less"
-  ],
-  "names": [],
-  "mappings": "AAGA,IAAI,KAEA;EAEI,sBAAA;EACA,mBAAA;EACA,gBAAA;;AANR,IAAI,KASA;EAEI,wBAAA;EACA,gBAAA"
-}

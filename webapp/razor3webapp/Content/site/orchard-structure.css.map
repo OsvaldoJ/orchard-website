@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "file": "structure.css",
-  "sources": [
-    "structure.less"
-  ],
-  "names": [],
-  "mappings": "AAGA;EAEI,gBAAA;EACA,oBAAA;EACA,mBAAA;EACA,iCAAA;;AAGJ;EAEI,oBAAA"
-}
