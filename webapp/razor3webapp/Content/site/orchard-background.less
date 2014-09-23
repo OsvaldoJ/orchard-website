@@ -11,10 +11,11 @@ body > section:nth-child(2n) {
 
 header {
 
-    @png-width:280px;
-    @png-height:40px;
-    @background-position-x:-15px;
-    @background-size: @png-width - @background-position-x;
+    @png-width: 280px;
+    @png-height: 40px;
+    @left-right-offset: 20px;
+    @left-right-background-size: 320px;
+    @left-right-width: @left-right-background-size - @left-right-offset;
 
     &.background-flag {
         background-image: url("../../site/imgs/background-flag.PNG");
@@ -37,9 +38,10 @@ header {
             font-weight: normal;
         }
 
-        &.background-flag-left {            
-            background-size: @background-size;
-            background-position:@background-position-x 0;
+        &.background-flag-left {
+            background-size: @left-right-background-size;
+            width: @left-right-width;
+            background-position: -@left-right-offset 0;
             border-bottom-left-radius: 5px;
             border-top-left-radius: 5px;
             margin-left: 0;

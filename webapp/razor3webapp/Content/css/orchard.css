@@ -7374,8 +7374,9 @@ header.background-flag h6 {
   font-weight: normal;
 }
 header.background-flag.background-flag-left {
-  background-size: 295px;
-  background-position: -15px 0;
+  background-size: 320px;
+  width: 300px;
+  background-position: -20px 0;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   margin-left: 0;
