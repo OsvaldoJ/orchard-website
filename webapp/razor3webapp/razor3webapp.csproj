@@ -91,9 +91,10 @@
     <Content Include="Content\css\orchard.css" />
     <Content Include="Content\css\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\site\imgs\background-flag.PNG" />
+    <Content Include="Content\site\imgs\carousel-main\unicorn2.jpg" />
     <Content Include="Content\site\imgs\download.png" />
     <Content Include="Content\site\imgs\feature.png" />
-    <Content Include="Content\site\imgs\no-limits.jpg" />
+    <Content Include="Content\site\imgs\carousel-main\no-limits.jpg" />
     <Content Include="Content\site\imgs\orchard-admin.png" />
     <Content Include="Content\site\imgs\orchard-icon.png" />
     <Content Include="Content\site\imgs\partner-site.PNG" />
@@ -107,7 +108,7 @@
     <Content Include="Content\site\imgs\partner-square-pluralsite.PNG" />
     <Content Include="Content\site\imgs\partner-square-teamcity.PNG" />
     <Content Include="Content\site\imgs\screenshot.png" />
-    <Content Include="Content\site\imgs\uncorn.jpg" />
+    <Content Include="Content\site\imgs\carousel-main\unicorn1.jpg" />
     <Content Include="Content\site\orchard.css">
       <DependentUpon>orchard.less</DependentUpon>
     </Content>
@@ -219,6 +220,7 @@
     <Compile Include="Fingerprint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
