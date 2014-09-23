@@ -1,4 +1,4 @@
-﻿/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -2367,8 +2367,8 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(../fonts/glyphicons-halflings-regular.eot);
-  src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -5790,7 +5790,7 @@ body > section:nth-child(2n) {
   background-color: #7a9c1f;
 }
 header.background-flag {
-  background-image: url(../../site/imgs/background-flag.PNG);
+  background-image: url("../../site/imgs/background-flag.PNG");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #485d13;
@@ -6042,8 +6042,8 @@ header.header-home-page {
   text-align: center;
 }
 header.page-header {
-  padding-bottom: 40px;
   margin-bottom: 40px;
+  border: none;
 }
 header.page-header h1,
 header.page-header h2,
@@ -6052,6 +6052,9 @@ header.page-header h4,
 header.page-header h5,
 header.page-header h6 {
   margin-bottom: 20px;
+}
+header.page-header.page-header-top {
+  border-bottom: thin solid #8ab124;
 }
 section {
   padding-bottom: 60px;
@@ -6094,9 +6097,6 @@ a {
 }
 #why-orchard ol li.active {
   font-weight: bold;
-}
-article#download section {
-  border-bottom: thin solid #8ab124;
 }
 article#download header {
   margin-top: 40px;
@@ -6218,7 +6218,6 @@ article#download figure button .badge {
   background-color: #ffffff;
 }
 article#community section {
-  border-bottom: thin solid #8ab124;
   margin-left: 40px;
 }
 article#community header {
@@ -6367,7 +6366,6 @@ article#community #community-blog ul.blogposts {
 article#community #community-blog ul.blogposts li.post {
   margin-top: 30px;
   padding-bottom: 20px;
-  border-bottom: thin solid #8ab124;
 }
 article#community #community-blog ul.blogposts li.post .meta {
   margin: 0;

@@ -89,25 +89,9 @@
       <DependentUpon>variables.less</DependentUpon>
     </Content>
     <Content Include="Content\css\orchard.css" />
-    <Content Include="Content\css\variables.css" />
     <Content Include="Content\css\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\site\imgs\background-flag.PNG" />
     <Content Include="Content\site\imgs\download.png" />
-    <Content Include="Content\site\orchard-background.css">
-      <DependentUpon>orchard-background.less</DependentUpon>
-    </Content>
-    <Content Include="Content\site\orchard-banner.css">
-      <DependentUpon>orchard-banner.less</DependentUpon>
-    </Content>
-    <Content Include="Content\site\orchard-carousel.css">
-      <DependentUpon>orchard-carousel.less</DependentUpon>
-    </Content>
-    <Content Include="Content\site\orchard-figures.css">
-      <DependentUpon>orchard-figures.less</DependentUpon>
-    </Content>
-    <Content Include="Content\site\orchard-footer.css">
-      <DependentUpon>orchard-footer.less</DependentUpon>
-    </Content>
     <Content Include="Content\site\imgs\feature.png" />
     <Content Include="Content\site\imgs\no-limits.jpg" />
     <Content Include="Content\site\imgs\orchard-admin.png" />
@@ -124,17 +108,8 @@
     <Content Include="Content\site\imgs\partner-square-teamcity.PNG" />
     <Content Include="Content\site\imgs\screenshot.png" />
     <Content Include="Content\site\imgs\uncorn.jpg" />
-    <Content Include="Content\site\orchard-show-elements.css">
-      <DependentUpon>orchard-show-elements.less</DependentUpon>
-    </Content>
     <Content Include="Content\site\orchard.css">
       <DependentUpon>orchard.less</DependentUpon>
-    </Content>
-    <Content Include="Content\site\orchard-structure.css">
-      <DependentUpon>orchard-structure.less</DependentUpon>
-    </Content>
-    <Content Include="Content\site\orchard-type.css">
-      <DependentUpon>orchard-type.less</DependentUpon>
     </Content>
     <Content Include="customers.cshtml" />
     <Content Include="documentation.cshtml" />
@@ -189,53 +164,31 @@
     <Content Include="Content\css\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\css\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\css\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="Content\site\orchard-background.less" />
-    <Content Include="Content\site\orchard-background.css.map">
-      <DependentUpon>orchard-background.css</DependentUpon>
-    </Content>
-    <Content Include="Content\site\orchard-banner.less" />
-    <Content Include="Content\site\orchard-banner.css.map">
-      <DependentUpon>orchard-banner.css</DependentUpon>
-    </Content>
-    <Content Include="Content\site\orchard-carousel.less" />
-    <Content Include="Content\site\orchard-carousel.css.map">
-      <DependentUpon>orchard-carousel.css</DependentUpon>
-    </Content>
-    <Content Include="Content\site\orchard-figures.less" />
-    <Content Include="Content\site\orchard-figures.css.map">
-      <DependentUpon>orchard-figures.css</DependentUpon>
-    </Content>
-    <Content Include="Content\site\orchard-footer.less" />
-    <Content Include="Content\site\orchard-footer.css.map">
-      <DependentUpon>orchard-footer.css</DependentUpon>
-    </Content>
+    <Content Include="Content\site\_orchard-background.less" />
+    <Content Include="Content\site\_orchard-banner.less" />
+    <Content Include="Content\site\_orchard-carousel.less" />
+    <Content Include="Content\site\_orchard-figures.less" />
+    <Content Include="Content\site\_orchard-footer.less" />
     <Content Include="Content\site\imgs\Thumbs.db" />
-    <Content Include="Content\site\orchard-navs.less" />
-    <Content Include="Content\site\orchard-partners.less" />
-    <Content Include="Content\site\orchard-show-elements.less" />
-    <Content Include="Content\site\orchard-show-elements.css.map">
-      <DependentUpon>orchard-show-elements.css</DependentUpon>
-    </Content>
+    <Content Include="Content\site\_orchard-navs.less" />
+    <Content Include="Content\site\_orchard-partners.less" />
+    <Content Include="Content\site\_orchard-show-elements.less" />
     <Content Include="Content\site\orchard.less" />
     <Content Include="Content\site\orchard.css.map">
       <DependentUpon>orchard.css</DependentUpon>
     </Content>
-    <Content Include="Content\site\orchard-structure.less" />
-    <Content Include="Content\site\orchard-structure.css.map">
-      <DependentUpon>orchard-structure.css</DependentUpon>
-    </Content>
-    <Content Include="Content\site\orchard-type.less" />
-    <Content Include="Content\site\orchard-type.css.map">
-      <DependentUpon>orchard-type.css</DependentUpon>
-    </Content>
+    <Content Include="Content\site\_orchard-structure.less" />
+    <Content Include="Content\site\_orchard-type.less" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Content\site\orchard-mixins.less" />
-    <Content Include="Content\site\orchard-latest-post.less" />
-    <Content Include="Content\site\orchard-features.less" />
-    <Content Include="Content\site\orchard-why-orchard.less" />
+    <Content Include="Content\site\_orchard-mixins.less" />
+    <Content Include="Content\site\_orchard-latest-post.less" />
+    <Content Include="Content\site\_orchard-features.less" />
+    <Content Include="Content\site\_orchard-why-orchard.less" />
     <Content Include="community.cshtml" />
-    <Content Include="Content\site\orchard-download.less" />
-    <Content Include="Content\site\utilities.less" />
+    <Content Include="Content\site\_orchard-download.less" />
+    <Content Include="Content\site\_orchard-utilities.less" />
+    <Content Include="Content\site\_orchard-community.less" />
+    <Content Include="Content\site\_orchard-team.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
