@@ -1,9 +1,0 @@
-{
-  "version": 3,
-  "file": "background.css",
-  "sources": [
-    "background.less"
-  ],
-  "names": [],
-  "mappings": "AAGA;EACI,yBAAA;EACA,gBAAA;;AAGJ,OAAO,UAAU;EAEb,yBAAA;;AAGJ;EACI,yBAAA;EACA,YAAA;;AAGJ,IAAI,WAAW,aACX,GAAE,WAAY;EACV,mBAAA;EACA,gBAAA;EACA,gBAAA"
-}

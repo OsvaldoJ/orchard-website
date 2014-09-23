@@ -5606,7 +5606,9 @@ button.close {
 .panel-body:before,
 .panel-body:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+.teamRoster:before,
+.teamRoster:after {
   content: " ";
   display: table;
 }
@@ -5623,7 +5625,8 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-footer:after {
+.modal-footer:after,
+.teamRoster:after {
   clear: both;
 }
 .center-block {
@@ -6387,4 +6390,46 @@ article#community #community-blog ul.blogposts li.post ul {
 }
 article#community #community-blog ul.blogposts li.post:last-child {
   border-bottom: none;
+}
+.teamRoster {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-bottom: 40px;
+}
+.teamRoster .photo {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .teamRoster .photo {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.teamRoster .photo img {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.teamRoster .info {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .teamRoster .info {
+    float: left;
+    width: 83.33333333%;
+  }
 }
