@@ -32,12 +32,12 @@ header.background-flag h6 {
   font-weight: normal;
 }
 header.background-flag.background-flag-left {
-  background-position: -20px 0;
+  background-position: -15px 0;
   background-size: cover;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   margin-left: 0;
   padding-left: 15px;
   text-align: left;
-  width: 260px;
+  width: 265px;
 }
