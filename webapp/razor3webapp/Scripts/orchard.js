@@ -17,6 +17,7 @@
     }
 
     // see http://lesscss.org/usage/#using-less-in-the-browser
+    // this is in need of refactoring, because it's too confusing to read
     function setupLessColourPicker() {
 
         var key, value, obj, msg, input, lessVars, lessVarsList, formControl;
@@ -28,7 +29,7 @@
             ['brand-warning', '#f0ad4e'],
             ['brand-danger', '#d9534f'],
             ['orchard-color-section', '#6F7763'],
-            ['orchard-color-section-alt', '#fff'],
+            ['orchard-color-section-alt', '#ffffff'],
             ['orchard-color-footer', '#D4D6C9'],
             ['orchard-color-flag', '#E87910'],
             ['orchard-color-border', '#FFAD3A'],
