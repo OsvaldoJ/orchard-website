@@ -175,6 +175,7 @@
     <Content Include="Content\less\orchard.less" />
     <Content Include="Content\less\_orchard-structure.less" />
     <Content Include="Content\less\_orchard-type.less" />
+    <Content Include="Scripts\holder.js" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Content\less\_orchard-mixins.less" />
     <Content Include="Content\less\_orchard-latest-post.less" />

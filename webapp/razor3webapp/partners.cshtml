@@ -6,4 +6,58 @@
             </header>
         </div>
     </div>
+
+    @{
+
+        var i = 0;
+        var numCols = 3;
+
+        var partners = new[] {
+
+            new { Name = "Show Orchard" },
+            new { Name = "Orchard Market" },
+            new { Name = "Orchard Prime" },
+            new { Name = "Orchard Dojo" },
+            new { Name = "DotNest" },
+            new { Name = "Orchard Pros" }
+
+        };
+
+        var numPartners = 12;
+
+
+        while (i < partners.Length)
+        {
+            if (i % numCols == 0)
+            {
+                if (i != 0)
+                {
+                    @Html.Raw("</div>")
+                }
+
+                @Html.Raw("<div class='row'>");
+            }
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img data-src="holder.js/400x400" alt="...">
+                    <div class="caption">
+                        <h3>@partners[i].Name</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p><a href="#" class="btn btn-primary" role="button">Visit Site</a></p>
+                    </div>
+                </div>
+            </div>
+
+            i += 1;
+
+            if (i == numPartners)
+            {
+                @Html.Raw("</div>")
+            }
+        }
+
+    }
+
+
 </article>
