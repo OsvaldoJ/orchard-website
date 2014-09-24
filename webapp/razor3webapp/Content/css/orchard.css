@@ -6443,7 +6443,7 @@ article#community #community-blog ul.blogposts li.post:last-child {
 #less-colour-picker ul {
   margin-bottom: 15px;
 }
-#less-colour-picker li {
+#less-colour-picker ul li {
   border-bottom: thin dashed silver;
 }
 #less-colour-picker input[type=color] {
