@@ -19,13 +19,44 @@
     // see http://lesscss.org/usage/#using-less-in-the-browser
     function setupLessColourPicker() {
 
-        var key, value, obj, msg, input;
+        var key, value, obj, msg, input, lessVars, lessVarsList, formControl;
 
-        msg = $('#less-colour-picker span.msg');
-        input = $('#less-colour-picker input');
+        lessVars = [
+            ['brand-primary', '#428bca'],
+            ['brand-success', '#5cb85c'],
+            ['brand-info', '#5bc0de'],
+            ['brand-warning', '#f0ad4e'],
+            ['brand-danger', '#d9534f'],
+            ['orchard-color-section', '#6F7763'],
+            ['orchard-color-section-alt', '#fff'],
+            ['orchard-color-footer', '#D4D6C9'],
+            ['orchard-color-flag', '#E87910'],
+            ['orchard-color-border', '#FFAD3A'],
+            ['orchard-color-latest-posts', '#39922C']
+        ];
+
+        picker = $('#less-colour-picker');
+
+        // append vars to picker ul
+        lessVarsList = picker.find('ul.less-vars');
+        for (var i = 0; i < lessVars.length; i += 1) {
+
+            key = lessVars[i][0];
+            value = lessVars[i][1];
+
+            formControl =
+                $('<li><label>@' + key + ': <input name="' + key + '" type="color" value="' + value + '" /> (' + value + ') </label></li>');
+
+            lessVarsList.append(formControl);
+        }
+
+        // add change event
+        input = picker.find('input');
+        msg = picker.find('span.msg');
 
         input.change(function () {
 
+            msg.text('Compiling less.');
             msg.show();
 
             key = $(this).attr('name');
@@ -40,7 +71,6 @@
 
         });
 
-        input.change();
     }
 
     setupWhyOrchardCarousel();
