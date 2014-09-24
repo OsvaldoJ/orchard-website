@@ -3,31 +3,25 @@
         margin-bottom: 40px;
         margin-top: 60px;
         padding-bottom: 20px;
-
-        &.header-home-page {
-            .text-center;
-        }
-
-        &.page-header {
-            margin-bottom: 40px;
-            border: none;
-
-            h1, h2, h3, h4, h5, h6 {
-                margin-bottom: 20px;
-            }
-
-            &.page-header-top {
-                border-bottom: thin solid @orchard-color-border;
-            }
-        }
     }
 
     section {
         padding-bottom: 60px;
         border: none;
+        background-color: @orchard-color-section;
+
+        &:nth-child(2n) {
+            background-color: @orchard-color-section-alt;
+        }
 
         &#banner {
             padding-bottom: 0;
+        }
+
+        &#latest-post {
+            background-color: @orchard-color-latest-posts;
+            color: white;
+            padding: 20px;
         }
     }
 }
