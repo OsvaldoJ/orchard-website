@@ -181,11 +181,13 @@
     <Content Include="Content\less\_orchard-features.less" />
     <Content Include="Content\less\_orchard-why-orchard.less" />
     <Content Include="community.cshtml" />
-    <Content Include="Content\less\_orchard-download.less" />
+    <Content Include="Content\less\_orchard-article-download.less" />
     <Content Include="Content\less\_orchard-utilities.less" />
-    <Content Include="Content\less\_orchard-community.less" />
+    <Content Include="Content\less\_orchard-article-community.less" />
     <Content Include="Content\less\_orchard-team.less" />
     <Content Include="Content\less\_less-colour-picker.less" />
+    <Content Include="Content\less\_orchard-article.less" />
+    <Content Include="Content\less\_orchard-article-home.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

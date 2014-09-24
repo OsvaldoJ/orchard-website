@@ -3,7 +3,194 @@
         <div class="col-md-12">
             <header class="page-header page-header-top">
                 <h1>Features</h1>
+                <p>
+                    In the near term, we'll be focused on servicing the V1 release and planning for the next version.
+                    The feature roadmap is subject to change as the project evolves, and we welcome your input.
+                </p>
             </header>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <section>
+                <header class="page-header">
+                    <h3 id="current">Current Priorities</h3>
+                </header>
+                <h4>Priorities for Orchard 1.9:</h4>
+                <p>This release is expected to be released for October 2014</p>
+                <ul>
+                    <li>
+                        Audit Trail module (done)
+                        <ul>
+                            <li>Daniel Stolt (<a href="https://www.codeplex.com/site/users/view/Decorum">Decorum</a>) and Sipke Schoorstra (<a href="https://www.codeplex.com/site/users/view/sfmskywalker">sfmskywalker</a>) own this contribution</li>
+                        </ul>
+                    </li>
+                    <li>Draftable widgets (done)</li>
+                    <li>Indexable drafts (done)</li>
+                    <li>
+                        Date localization and calendar support improvements and fixes (done)
+                        <ul>
+                            <li>Daniel Stolt (<a href="https://www.codeplex.com/site/users/view/Decorum">Decorum</a>) owns this contribution</li>
+                            <li>More information here: https://orchard.codeplex.com/discussions/560347</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Dynamic Layout module (on track)
+                        <ul>
+                            <li>Sipke Schoorstra (<a href="https://www.codeplex.com/site/users/view/sfmskywalker">sfmskywalker</a>) owns this contribution</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Dynamic Forms module (on track)
+                        <ul>
+                            <li>Sipke Schoorstra (<a href="https://www.codeplex.com/site/users/view/sfmskywalker">sfmskywalker</a>) owns this contribution</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Integrate OWIN middlewares support  (working, specflow tests broken)
+                        <ul>
+                            <li>Nick (<a href="https://www.codeplex.com/site/users/view/Jetski5822">Jetski5822</a>) is responsible for this feature</li>
+                            <li>Identity</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Improved Workflow module (on track)
+                        <ul>
+                            <li>Error/Exception branches support</li>
+                            <li>Loop activities</li>
+                            <li>Piotr (<a href="https://www.codeplex.com/site/users/view/pszmyd">pszmyd</a>) owns this contribution</li>
+                        </ul>
+                    </li>
+                    <li>Upgrading to ASP.NET MVC 5.2 (done)</li>
+                    <li>Upgrading to .NET Framework 4.5.1 (done)</li>
+                    <li>Adding Azure Redis Cache support (on track, test/feedback needed)</li>
+                    <li>Upgrading to TinyMCe 4 (done)</li>
+                    <li>
+                        Localization improvements (on track, test/feedback needed)
+                        <ul>
+                            <li>Nick (<a href="https://www.codeplex.com/site/users/view/Jetski5822">Jetski5822</a>) is responsible for this feature</li>
+                            <li>RTL support in Admin</li>
+                            <li>Culture selector (admin and front end)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <header class="page-header">
+                    <h3>Currently Implemented <small>Partially or in Full</small></h3>
+                </header>
+                <ul>
+                    <li>Basic admin panel and login</li>
+                    <li>CMS page creation and management</li>
+                    <li>Content zones within pages</li>
+                    <li>Content - Different content types/metadata, viewers and editors for content </li>
+                    <li>Content editing and publication (drafts, scheduling, preview)</li>
+                    <li>Extensibility - Initial content type and composability infrastructure (based on MVC areas)</li>
+                    <li>Media management (support for any media type, extensibility, thumbnails, online image editor)</li>
+                    <li>Users, roles, membership and profile data (Users/Roles/Permissions, Mgmt)</li>
+                    <li>XML-RPC (Live Writer, MetaWebBlog) support for blogs</li>
+                    <li>Basic blog (create and manage blogs and posts, RSS/Atom, draft/publish, archives)</li>
+                    <li>Comments - Associate comments with content types, manage comments, spam protection</li>
+                    <li>Tags - Associate tags with content types, browse by tag</li>
+                    <li>Settings - App-level, extension-level settings definition and UI/management</li>
+                    <li>Themes - Theming model, UI to install/remove themes, preview themes</li>
+                    <li>Setup</li>
+                    <li>Simple navigation</li>
+                    <li>Multi-tenancy</li>
+                    <li>Azure support (Blob Storage, Cache, Database Cache)</li>
+                    <li>Command-line tooling</li>
+                    <li>Event model (a.k.a. plugins)</li>
+                    <li>App Localization (of admin panel, modules, themes)</li>
+                    <li>Content Localization (multi-lingual sites)</li>
+                    <li>Search and Indexing (with search API)</li>
+                    <li>Module extensibility API and packaging</li>
+                    <li>Scaffolding of Modules (cmd-line)</li>
+                    <li>Creation of arbitrary content types and items - fields, parts</li>
+                    <li>Define content types, parts, and fields using the admin panel or code</li>
+                    <li>Add fields to content types using the admin panel or code</li>
+                    <li>Associate content parts to types using the admin panel or code</li>
+                    <li>Add fields or parts to existing content types using the admin panel or code</li>
+                    <li>Command-line support (bin/orchard.exe)</li>
+                    <li>Enabling features of modules</li>
+                    <li>Data migrations on module activation/upgrade</li>
+                    <li>Reporting (event logs)</li>
+                    <li>Search (based on Lucene)</li>
+                    <li>Module packaging</li>
+                    <li>Dynamic compilation of modules</li>
+                    <li>Theme re-foundation: Razor integration, Page Object Model, naming conventions and helpers</li>
+                    <li>Script and stylesheet registration</li>
+                    <li>Theme packaging</li>
+                    <li>Content item lists</li>
+                    <li>Medium trust</li>
+                    <li>Email notifications</li>
+                    <li>Widgets - Admin UI and management for widgets, widget groups, mapping to zones</li>
+                    <li>Marketplace - Ability to browse/install extensions from online gallery</li>
+                    <li>Editor-integrated media picker</li>
+                    <li>Setup recipes</li>
+                    <li>Module Recipes</li>
+                    <li>Import/Export</li>
+                    <li>Tokens</li>
+                    <li>Rules</li>
+                    <li>Forms API</li>
+                    <li><a href="http://orchard.codeplex.com/discussions/274916">Autoroute</a></li>
+                    <li><a href="http://orchard.codeplex.com/discussions/274915">Projections</a></li>
+                    <li><a href="http://orchard.codeplex.com/discussions/274918">Core Field Types</a></li>
+                    <li><a href="http://orchard.codeplex.com/discussions/348649">Admin placement</a></li>
+                    <li><a href="http://orchard.codeplex.com/discussions/348654">Spam Protection</a></li>
+                    <li>NHibernate 3 and 2nd level caching</li>
+                    <li>ASP.NET MVC 5 / WebAPI</li>
+                    <li>MySQL provider</li>
+                    <li>Workflows</li>
+                    <li>Output cache</li>
+                    <li>Tokens</li>
+                    <li>Custom forms</li>
+                    <li>Content permissions</li>
+                    <li>SSL</li>
+                    <li>.NET 4.5 support</li>
+                    <li>Lists</li>
+                    <li>Timezones and Calendars</li>
+                    <li>Jobs Queue</li>
+                    <li>Templates management </li>
+                    <li>Business data caching </li>
+                </ul>
+            </section>
+
+            <section>
+                <header class="page-header">
+                    <h3>Areas of Focus for Future Iterations <small>Backlog, Not in Priority Order</small></h3>
+                </header>
+                <ul>
+                    <li>REST APIs (<a href="https://orchard.codeplex.com/discussions/560607">design notes</a>)</li>
+                    <li>Deployment module (<a href="https://orchard.codeplex.com/discussions/452000">design notes</a>)</li>
+                    <li>Localization improvements (admin filtering, default selectors)</li>
+                    <li>Improved content navigation and filtering</li>
+                    <li>Multiple templates for pages</li>
+                    <li>SEO - Semantic URLs, metas/keywords, Web standards, sitemap</li>
+                    <li>
+                        Admin - UI improvements, dashboard, notifications/email
+                        <ul>
+                            <li>Improved admin theme (Based on Bootstrap)</li>
+                        </ul>
+                    </li>
+                    <li>Profiles - User profiles, avatars, reputation system</li>
+                    <li>Themes - Additional themes improvements (in-browser editing, etc)</li>
+                    <li>Performance - Caching, optimization, script combining/minification</li>
+                    <li>Analytics - Reporting, site-use statistics</li>
+                    <li>Mobile - Support for management, moderation, publishing from mobile device</li>
+                    <li>Other Domain-specific packages - Wiki, Ads, etc</li>
+                    <li>Forums </li>
+                    <li>Commerce</li>
+                </ul>
+            </section>
+
+        </div>
+
+    </div>
+
 </article>
+
+
+
