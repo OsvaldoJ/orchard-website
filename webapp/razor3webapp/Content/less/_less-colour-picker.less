@@ -16,12 +16,18 @@
 }
 
 #less-colour-picker span.msg {
-    color: red;
+    background-color: #F9EDBE;
+    color: black;
+    border: thin solid darken(#F9EDBE, 25%);
+    border-radius:4px;
+    padding:1px;
+    width:100%;
+    display:block;
 }
 
 @media(max-width:800px) {
 
     #less-colour-picker {
-        visibility: hidden;
+        display: none;
     }
 }

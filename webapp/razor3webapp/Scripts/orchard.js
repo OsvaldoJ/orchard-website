@@ -22,6 +22,11 @@
 
         var key, value, obj, msg, input, label, span, lessVars, ul, li;
 
+        picker = $('#less-colour-picker');
+
+        msg = picker.find('span.msg');
+        msg.hide();
+
         lessVars = [
             ['brand-primary', '#428bca'],
             ['brand-success', '#5cb85c'],
@@ -36,7 +41,6 @@
             ['orchard-color-latest-posts', '#39922C']
         ];
 
-        picker = $('#less-colour-picker');
 
         // append vars to picker ul
         ul = picker.find('ul.less-vars');
@@ -56,7 +60,6 @@
 
         // add change event
         input = picker.find('input');
-        msg = picker.find('span.msg');
 
         input.change(function () {
 
