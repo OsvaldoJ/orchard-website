@@ -1,19 +1,8 @@
 ﻿article {
     margin-bottom: 20px;
 
-    section {
-        border-bottom: thin solid @orchard-color-border;
-
-        &:last-child {
-            border-bottom: none;
-        }
-    }
 
     header {
-
-        &.header-home-page {
-            .text-center;
-        }
 
         &.page-header {
             border: none;
@@ -24,6 +13,16 @@
             &.page-header-top {
                 border-bottom: thin solid @orchard-color-border;
             }
+        }
+    }
+
+    section {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        border-bottom: thin solid @orchard-color-border;
+
+        &:last-child {
+            border-bottom: none;
         }
     }
 }
