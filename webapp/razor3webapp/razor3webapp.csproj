@@ -185,6 +185,7 @@
     <Content Include="Content\less\_orchard-utilities.less" />
     <Content Include="Content\less\_orchard-community.less" />
     <Content Include="Content\less\_orchard-team.less" />
+    <Content Include="Content\less\_less-colour-picker.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
