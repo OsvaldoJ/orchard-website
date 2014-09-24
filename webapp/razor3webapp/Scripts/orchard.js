@@ -22,7 +22,7 @@
 
         var key, value, msg, input, label, span, lessVars, ul, li, save, storageKey;
 
-        storageKey = 'orchard-lessc-variables';
+        storageKey = 'orchard-lessc-variables-04';
 
         picker = $('#less-colour-picker');
 
@@ -45,6 +45,9 @@
             lessVars['orchard-color-flag'] = '#E87910';
             lessVars['orchard-color-border'] = '#FFAD3A';
             lessVars['orchard-color-latest-posts'] = '#39922C';
+            lessVars['body-bg'] = '#ffffff';
+            lessVars['text-color'] = '#000000';
+            // lessVars[''] = '#';
         }
 
         // append vars to picker ul in the UI
