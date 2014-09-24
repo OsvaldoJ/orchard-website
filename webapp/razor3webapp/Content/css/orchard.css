@@ -6440,6 +6440,9 @@ article#community #community-blog ul.blogposts li.post:last-child {
   right: 10px;
   z-index: 1000;
 }
+#less-colour-picker ul {
+  margin-bottom: 15px;
+}
 #less-colour-picker li {
   border-bottom: thin dashed silver;
 }
