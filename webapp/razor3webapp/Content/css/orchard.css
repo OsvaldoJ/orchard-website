@@ -6092,6 +6092,9 @@ header h5 {
 a {
   text-decoration: underline;
 }
+a.btn {
+  text-decoration: none;
+}
 #why-orchard ol li {
   width: 150px;
 }
