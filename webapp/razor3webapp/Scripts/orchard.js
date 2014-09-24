@@ -20,7 +20,7 @@
     // this is in need of refactoring, because it's too confusing to read
     function setupLessColourPicker() {
 
-        var key, value, obj, msg, input, lessVars, lessVarsList, formControl;
+        var key, value, obj, msg, input, label, span, lessVars, ul, li;
 
         lessVars = [
             ['brand-primary', '#428bca'],
@@ -39,16 +39,19 @@
         picker = $('#less-colour-picker');
 
         // append vars to picker ul
-        lessVarsList = picker.find('ul.less-vars');
+        ul = picker.find('ul.less-vars');
         for (var i = 0; i < lessVars.length; i += 1) {
 
             key = lessVars[i][0];
             value = lessVars[i][1];
 
-            formControl =
-                $('<li><label>@' + key + ': <input name="' + key + '" type="color" value="' + value + '" /> (' + value + ') </label></li>');
+            li = $('<li/>');
+            label = $('<label/>', { text: '@' + key + ':' });
+            span = $('<span/>', { text: value });
+            input = $('<input/>', { type:'color', value: value, name: key });
 
-            lessVarsList.append(formControl);
+            li.append(label).append(span).append(input);
+            ul.append(li);
         }
 
         // add change event
