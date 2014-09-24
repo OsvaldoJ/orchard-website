@@ -51,18 +51,31 @@
             position: fixed;
             bottom: 10px;
             right: 10px;
-            z-index:1000;
+            z-index: 1000;
         }
-        input[type=color] {
-            padding:2px;
-        }
+
+            #less-colour-picker input[type=color] {
+                padding: 2px;
+            }
+
+            #less-colour-picker span.msg {
+                color: red;
+            }
     </style>
     <div id="less-colour-picker" class="alert alert-info">
-        <label>
-            Gray Base
-            <input name="grayBase" type="color" />
-        </label>
-        <span id="msg">Compiling less</span>
+        <p>
+            <label>
+                @@grayBase
+                <input name="grayBase" type="color" />
+            </label>
+            for bootstrap variables.
+        </p>
+<pre>
+@@gray-darker:   lighten(@@grayBase, 10%); 
+@@gray-dark:     lighten(@@grayBase, 15%);   
+@@gray:          lighten(@@grayBase, 20%); 
+@@gray-light:    lighten(@@grayBase, 25%);   
+@@gray-lighter:  lighten(@@grayBase, 30%);</pre>
     </div>
 
 

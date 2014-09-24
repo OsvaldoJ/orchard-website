@@ -21,7 +21,7 @@
 
         var key, value, obj, msg, input;
 
-        msg = $('#less-colour-picker #msg');
+        msg = $('#less-colour-picker span.msg');
         input = $('#less-colour-picker input');
 
         input.change(function () {
