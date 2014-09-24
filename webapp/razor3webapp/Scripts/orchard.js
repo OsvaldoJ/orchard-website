@@ -66,10 +66,12 @@
             msg.text('Compiling less.');
             msg.show();
 
-            key = $(this).attr('name');
-            value = $(this).val();
             obj = {};
-            obj[key] = value;
+            $.each(picker.find('input'), function (index, value) {
+                key = $(value).attr('name');
+                value = $(value).val();
+                obj[key] = value;
+            });
 
             window.setTimeout(function () {
                 less.modifyVars(obj);
