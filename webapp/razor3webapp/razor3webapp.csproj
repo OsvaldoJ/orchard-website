@@ -169,7 +169,6 @@
     <Content Include="Content\less\_orchard-carousel.less" />
     <Content Include="Content\less\_orchard-figures.less" />
     <Content Include="Content\less\_orchard-footer.less" />
-    <Content Include="Content\imgs\Thumbs.db" />
     <Content Include="Content\less\_orchard-navs.less" />
     <Content Include="Content\less\_orchard-partners.less" />
     <Content Include="Content\less\_orchard-show-elements.less" />
