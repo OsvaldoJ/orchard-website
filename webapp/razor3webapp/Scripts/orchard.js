@@ -20,7 +20,7 @@
     // this is in need of refactoring
     function setupLessColourPicker() {
 
-        var key, value, obj, msg, input, label, span, lessVars, ul, li;
+        var key, value, obj, msg, input, label, span, lessVars, ul, li, save;
 
         picker = $('#less-colour-picker');
 
@@ -41,7 +41,6 @@
             ['orchard-color-latest-posts', '#39922C']
         ];
 
-
         // append vars to picker ul
         ul = picker.find('ul.less-vars');
         for (var i = 0; i < lessVars.length; i += 1) {
@@ -58,10 +57,9 @@
             ul.append(li);
         }
 
-        // add change event
-        input = picker.find('input');
-
-        input.change(function () {
+        // save
+        // todo - persist accross pages.
+        picker.find('a.btn-primary').click(function () {
 
             msg.text('Compiling less.');
             msg.show();
@@ -71,7 +69,7 @@
                 key = $(value).attr('name');
                 value = $(value).val();
                 obj[key] = value;
-            });
+            });            
 
             window.setTimeout(function () {
                 less.modifyVars(obj);
