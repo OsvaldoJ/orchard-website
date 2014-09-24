@@ -43,6 +43,28 @@
 </head>
 <body>
 
+    <!-- Less Colour Picker
+    ================================================== -->
+
+    <style>
+        #less-colour-picker {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        input[type=color] {
+            padding:2px;
+        }
+    </style>
+    <div id="less-colour-picker" class="alert alert-info">
+        <label>
+            Gray Base
+            <input name="grayBase" type="color" />
+        </label>
+        <span id="msg">Compiling less</span>
+    </div>
+
+
     <!-- Navbar
     ================================================== -->
 
@@ -167,5 +189,3 @@
 
 </body>
 </html>
-
-
