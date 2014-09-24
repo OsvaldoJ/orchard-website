@@ -56,7 +56,7 @@
 
                 li = $('<li/>');
                 label = $('<label/>', { text: '@' + key + ':' });
-                span = $('<span/>', { text: value });
+                span = $('<span/>', { text: value + ';' });
                 input = $('<input/>', { type: 'color', value: value, name: key });
 
                 li.append(label).append(span).append(input);
