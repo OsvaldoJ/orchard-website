@@ -27,9 +27,6 @@
 
         };
 
-        var numPartners = 12;
-
-
         while (i < partners.Length)
         {
             if (i % numCols == 0)
@@ -55,12 +52,11 @@
 
             i += 1;
 
-            if (i == numPartners)
+            if (i == partners.Length)
             {
                 @Html.Raw("</div>")
             }
         }
-
     }
 
 
