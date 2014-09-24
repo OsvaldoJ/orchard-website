@@ -17,7 +17,7 @@
     }
 
     // see http://lesscss.org/usage/#using-less-in-the-browser
-    // this is in need of refactoring, because it's too confusing to read
+    // this is in need of refactoring
     function setupLessColourPicker() {
 
         var key, value, obj, msg, input, label, span, lessVars, ul, li;
