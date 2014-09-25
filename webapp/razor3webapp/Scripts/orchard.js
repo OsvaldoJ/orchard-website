@@ -58,7 +58,16 @@
                 obj['orchard-color-latest-posts'] = '#39922C';
                 obj['body-bg'] = '#ffffff';
                 obj['text-color'] = '#000000';
-                // lessVars[''] = '#';
+                obj['state-success-text'] = '#3c763d';
+                obj['state-success-bg'] = '#dff0d8';
+                obj['state-info-text'] = '#31708f';
+                obj['state-info-bg'] = '#d9edf7';
+                obj['state-warning-text'] = '#8a6d3b';
+                obj['state-warning-bg'] = '#fcf8e3';
+                obj['state-danger-text'] = '#a94442';
+                obj['state-danger-bg'] = '#f2dede';
+                // obj[''] = '#';
+
             }
 
             return obj;
