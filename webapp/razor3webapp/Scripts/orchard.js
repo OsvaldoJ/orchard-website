@@ -1,4 +1,6 @@
-﻿(function (window) {
+﻿/*global less, window*/
+    
+(function (window, less) {
 
     function setupWhyOrchardCarousel() {
         var indicators = $('#why-orchard').find("ol li");
@@ -18,9 +20,10 @@
 
     // see http://lesscss.org/usage/#using-less-in-the-browser
     // this is in need of refactoring
-    function setupLessColourPicker() {
+    function setupLessColourPicker(less) {
 
-        var key,
+        var picker,
+            key,
             value,
             msg,
             input,
@@ -29,9 +32,8 @@
             lessVars,
             ul,
             li,
-            save,
             storageKeyLessVars,
-            storageKeyOpenClose,
+            storageKeyIsOpen,
             controls,
             btnOpen,
             btnClose;
@@ -41,8 +43,7 @@
 
             if (window.localStorage.getItem(storageKeyLessVars) !== null) {
                 obj = JSON.parse(window.localStorage.getItem(storageKeyLessVars));
-            }
-            else {
+            } else {
                 obj = {};
                 obj['brand-primary'] = '#428bca';
                 obj['brand-success'] = '#5cb85c';
@@ -63,12 +64,12 @@
             return obj;
         }
 
-        function appendLessVars() {
+        function appendLessVars(picker) {
             ul = picker.find('ul.less-vars');
             for (var property in lessVars) {
                 if (lessVars.hasOwnProperty(property)) {
                     key = property;
-                    value = lessVars[property]
+                    value = lessVars[property];
 
                     li = $('<li/>');
                     label = $('<label/>', { text: '@' + key + ':' });
@@ -81,7 +82,7 @@
             }
         }
 
-        function compileLess() {
+        function compileLess(picker) {
             msg.text('Compiling less.');
             msg.show();
 
@@ -96,7 +97,6 @@
                 less.modifyVars(lessVars);
 
                 // save in session storage - duration of page session
-                var temp = JSON.stringify(lessVars);
                 window.localStorage.setItem(storageKeyLessVars, JSON.stringify(lessVars));
 
                 // save in local storage - accross page sessiosn
@@ -106,7 +106,7 @@
             }, 500);
         }
 
-        function setupOpenClose() {
+        function setupOpenClose(picker, storageKeyIsOpen) {
             controls = picker.find('#controls');
             btnOpen = picker.find('a.btn#open');
             btnClose = picker.find('a.btn#close');            
@@ -123,10 +123,9 @@
                 controls.show();
             });            
 
-            if (localStorage.getItem(storageKeyIsOpen) == 'false') {
+            if (localStorage.getItem(storageKeyIsOpen) === 'false') {
                 btnClose.click();
-            }
-            else {
+            } else {
                 btnOpen.click();
             }
             
@@ -138,20 +137,19 @@
         msg = picker.find('span.msg');
         msg.hide();
 
-        setupOpenClose();
+        setupOpenClose(picker, storageKeyIsOpen);
 
-        lessVars = getLessVars();
-        appendLessVars();
+        lessVars = getLessVars(picker);
+        appendLessVars(picker);
 
         picker.find('a.btn#compile').click(function () {
-            compileLess();
+            compileLess(picker);
         });
 
-        compileLess();
+        compileLess(picker);
     }
 
     setupWhyOrchardCarousel();
-    setupLessColourPicker();
+    setupLessColourPicker(less);
 
-}(window));
-
+}(window, less));
