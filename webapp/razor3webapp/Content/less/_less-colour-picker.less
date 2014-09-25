@@ -8,15 +8,34 @@
         margin-bottom: 15px;
 
         li {
-            border-bottom: thin dashed silver;
+            @width-label: 225px;
+            @width-span: 100px;
+            @width-input: 100px;            
+
+            width: @width-label + @width-span + @width-input;
+
+            label, span, input {
+                margin: 0;
+                padding:0;
+                border:none;
+                display:inline-block;
+                font-size:12px;
+                height:12px;
+                line-height:1;
+            }
+
+            label {
+                width: @width-label;
+            }
+
+            span {
+                width: @width-span;
+            }
+
+            input {                                
+                width: @width-input;
+            }
         }
-    }
-
-
-    input[type=color] {
-        padding: 2px;
-        float: right;
-        margin-left: 20px;
     }
 
     span.msg {

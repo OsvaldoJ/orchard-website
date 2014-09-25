@@ -66,8 +66,12 @@
                 obj['state-warning-bg'] = '#fcf8e3';
                 obj['state-danger-text'] = '#a94442';
                 obj['state-danger-bg'] = '#f2dede';
-                // obj[''] = '#';
-
+                /*
+                 * NOTE WELL:
+                 * Update the storageKeyLessVars
+                 * after adding variables to the list.
+                 * -------------------------------------------
+                 */
             }
 
             return obj;
