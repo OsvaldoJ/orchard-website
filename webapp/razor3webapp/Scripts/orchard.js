@@ -140,7 +140,7 @@
 
         }
 
-        storageKeyLessVars = 'orchard-lessc-variables-04';
+        storageKeyLessVars = 'orchard-lessc-variables-05';
         storageKeyIsOpen = 'orchard-lessc-open-close';
         picker = $('#less-colour-picker');
         msg = picker.find('span.msg');
