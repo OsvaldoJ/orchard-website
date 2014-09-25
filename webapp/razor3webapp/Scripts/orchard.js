@@ -153,24 +153,25 @@
 
         }
 
+        // instantiate
         storageKeyLessVars = 'orchard-lessc-variables-08';
         storageKeyIsOpen = 'orchard-lessc-open-close';
         picker = $('#less-colour-picker');
         msg = picker.find('span.msg');
         msg.hide();
 
+        // do stuff
         setupOpenClose(picker, storageKeyIsOpen);
-
         lessVars = getSavedLessVars(picker);
         appendLessVarsToUI(picker);
+        compileLess(picker);
 
+        // events
         picker.find('a.btn#compile').click(function () {
-
             lessVars = getLessVarsFromUI();
             compileLess(picker, lessVars);
         });
 
-        compileLess(picker);
     }
 
     setupWhyOrchardCarousel();
