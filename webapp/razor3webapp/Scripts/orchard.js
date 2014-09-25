@@ -72,13 +72,13 @@
 
         function getLessVars() {
             var obj;
-
             if (window.localStorage.getItem(storageKeyLessVars) !== null) {
+                // local storage
                 obj = JSON.parse(window.localStorage.getItem(storageKeyLessVars));
             } else {
+                // defaults
                 obj = getDefaultLessVars();
             }
-
             return obj;
         }
 
