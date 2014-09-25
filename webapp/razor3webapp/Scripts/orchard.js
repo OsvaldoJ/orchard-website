@@ -1,5 +1,5 @@
 ﻿/*global less, window*/
-    
+
 (function (window, less) {
 
     function setupWhyOrchardCarousel() {
@@ -109,7 +109,7 @@
         function setupOpenClose(picker, storageKeyIsOpen) {
             controls = picker.find('#controls');
             btnOpen = picker.find('a.btn#open');
-            btnClose = picker.find('a.btn#close');            
+            btnClose = picker.find('a.btn#close');
 
             btnClose.click(function () {
                 localStorage.setItem(storageKeyIsOpen, false);
@@ -121,14 +121,14 @@
                 localStorage.setItem(storageKeyIsOpen, true);
                 btnOpen.hide();
                 controls.show();
-            });            
+            });
 
-            if (localStorage.getItem(storageKeyIsOpen) === 'false') {
-                btnClose.click();
-            } else {
+            if (localStorage.getItem(storageKeyIsOpen) === 'true') {
                 btnOpen.click();
+            } else {
+                btnClose.click();
             }
-            
+
         }
 
         storageKeyLessVars = 'orchard-lessc-variables-04';
