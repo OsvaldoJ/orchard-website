@@ -20,50 +20,64 @@
     // this is in need of refactoring
     function setupLessColourPicker() {
 
-        var key, value, msg, input, label, span, lessVars, ul, li, save, storageKey;
+        var key,
+            value,
+            msg,
+            input,
+            label,
+            span,
+            lessVars,
+            ul,
+            li,
+            save,
+            storageKeyLessVars,
+            storageKeyOpenClose,
+            controls,
+            btnOpen,
+            btnClose;
 
-        storageKey = 'orchard-lessc-variables-04';
+        function getLessVars() {
+            var obj;
 
-        picker = $('#less-colour-picker');
+            if (window.localStorage.getItem(storageKeyLessVars) !== null) {
+                obj = JSON.parse(window.localStorage.getItem(storageKeyLessVars));
+            }
+            else {
+                obj = {};
+                obj['brand-primary'] = '#428bca';
+                obj['brand-success'] = '#5cb85c';
+                obj['brand-info'] = '#5bc0de';
+                obj['brand-warning'] = '#f0ad4e';
+                obj['brand-danger'] = '#d9534f';
+                obj['orchard-color-section'] = '#6F7763';
+                obj['orchard-color-section-alt'] = '#ffffff';
+                obj['orchard-color-footer'] = '#D4D6C9';
+                obj['orchard-color-flag'] = '#E87910';
+                obj['orchard-color-border'] = '#FFAD3A';
+                obj['orchard-color-latest-posts'] = '#39922C';
+                obj['body-bg'] = '#ffffff';
+                obj['text-color'] = '#000000';
+                // lessVars[''] = '#';
+            }
 
-        msg = picker.find('span.msg');
-        msg.hide();
-
-        if (window.localStorage.getItem(storageKey) !== null) {
-            lessVars = JSON.parse(window.localStorage.getItem(storageKey));
+            return obj;
         }
-        else {
-            lessVars = {};
-            lessVars['brand-primary'] = '#428bca';
-            lessVars['brand-success'] = '#5cb85c';
-            lessVars['brand-info'] = '#5bc0de';
-            lessVars['brand-warning'] = '#f0ad4e';
-            lessVars['brand-danger'] = '#d9534f';
-            lessVars['orchard-color-section'] = '#6F7763';
-            lessVars['orchard-color-section-alt'] = '#ffffff';
-            lessVars['orchard-color-footer'] = '#D4D6C9';
-            lessVars['orchard-color-flag'] = '#E87910';
-            lessVars['orchard-color-border'] = '#FFAD3A';
-            lessVars['orchard-color-latest-posts'] = '#39922C';
-            lessVars['body-bg'] = '#ffffff';
-            lessVars['text-color'] = '#000000';
-            // lessVars[''] = '#';
-        }
 
-        // append vars to picker ul in the UI
-        ul = picker.find('ul.less-vars');
-        for (var property in lessVars) {
-            if (lessVars.hasOwnProperty(property)) {
-                key = property;
-                value = lessVars[property]
+        function appendLessVars() {
+            ul = picker.find('ul.less-vars');
+            for (var property in lessVars) {
+                if (lessVars.hasOwnProperty(property)) {
+                    key = property;
+                    value = lessVars[property]
 
-                li = $('<li/>');
-                label = $('<label/>', { text: '@' + key + ':' });
-                span = $('<span/>', { text: value + ';' });
-                input = $('<input/>', { type: 'color', value: value, name: key });
+                    li = $('<li/>');
+                    label = $('<label/>', { text: '@' + key + ':' });
+                    span = $('<span/>', { text: value + ';' });
+                    input = $('<input/>', { type: 'color', value: value, name: key });
 
-                li.append(label).append(span).append(input);
-                ul.append(li);
+                    li.append(label).append(span).append(input);
+                    ul.append(li);
+                }
             }
         }
 
@@ -83,7 +97,7 @@
 
                 // save in session storage - duration of page session
                 var temp = JSON.stringify(lessVars);
-                window.localStorage.setItem(storageKey, JSON.stringify(lessVars));
+                window.localStorage.setItem(storageKeyLessVars, JSON.stringify(lessVars));
 
                 // save in local storage - accross page sessiosn
 
@@ -92,15 +106,48 @@
             }, 500);
         }
 
-        // apply changes        
-        picker.find('a.btn-primary').click(function () {
+        function setupOpenClose() {
+            controls = picker.find('#controls');
+            btnOpen = picker.find('a.btn#open');
+            btnClose = picker.find('a.btn#close');            
 
+            btnClose.click(function () {
+                localStorage.setItem(storageKeyIsOpen, false);
+                btnOpen.show();
+                controls.hide();
+            });
+
+            btnOpen.click(function () {
+                localStorage.setItem(storageKeyIsOpen, true);
+                btnOpen.hide();
+                controls.show();
+            });            
+
+            if (localStorage.getItem(storageKeyIsOpen) == 'false') {
+                btnClose.click();
+            }
+            else {
+                btnOpen.click();
+            }
+            
+        }
+
+        storageKeyLessVars = 'orchard-lessc-variables-04';
+        storageKeyIsOpen = 'orchard-lessc-open-close';
+        picker = $('#less-colour-picker');
+        msg = picker.find('span.msg');
+        msg.hide();
+
+        setupOpenClose();
+
+        lessVars = getLessVars();
+        appendLessVars();
+
+        picker.find('a.btn#compile').click(function () {
             compileLess();
-
         });
 
         compileLess();
-
     }
 
     setupWhyOrchardCarousel();
