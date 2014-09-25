@@ -40,7 +40,9 @@
     "ValidateStarSelector": true,
     "ValidateVendorSpecifics": true,
     "ValidateZeroUnit": true,
-    "ValidationLocation": "Messages"
+    "ValidationLocation": "Messages",
+    "Autoprefix": false,
+    "AutoprefixerBrowsers": null
   },
   "General": {
     "AllMessagesToOutputWindow": false,
@@ -74,7 +76,8 @@
     ],
     "MakeMinified": false,
     "OutputDirectory": null,
-    "RunOnBuild": false
+    "RunOnBuild": false,
+    "MinificationMode": "KeepQuotes"
   },
   "JavaScript": {
     "AutoMinify": false,
@@ -86,7 +89,10 @@
     "LintResultLocation": "Message",
     "MakeMinified": false,
     "OutputDirectory": null,
-    "RunOnBuild": false
+    "RunOnBuild": false,
+    "EvalTreatment": "MakeImmediateSafe",
+    "RootDirectory": "/Scripts/",
+    "TermSemicolons": true
   },
   "Less": {
     "CompileOnBuild": false,
@@ -129,9 +135,10 @@
     "GenerateSourceMaps": true,
     "MinifyInPlace": false,
     "OutputDirectory": null,
-    "OutputStyle": "expanded",
+    "OutputStyle": "Expanded",
     "ProcessSourceMapsForEditorEnhancements": true,
-    "ShowPreviewPane": true
+    "ShowPreviewPane": true,
+    "NumberPrecision": 5
   },
   "Sprite": {
     "CssOutputDirectory": null,
@@ -141,7 +148,8 @@
     "RunOnBuild": false,
     "ScssOutputDirectory": null,
     "UseAbsoluteUrl": false,
-    "UseFullPathForIdentifierName": true
+    "UseFullPathForIdentifierName": true,
+    "OutputDirectory": null
   },
   "SweetJs": {
     "CompileOnBuild": false,
