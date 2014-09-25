@@ -38,40 +38,45 @@
             btnOpen,
             btnClose;
 
+        function getDefaultLessVars() {
+            var obj = {};
+            obj['brand-primary'] = '#428bca';
+            obj['brand-success'] = '#5cb85c';
+            obj['brand-info'] = '#5bc0de';
+            obj['brand-warning'] = '#f0ad4e';
+            obj['brand-danger'] = '#d9534f';
+            obj['orchard-color-section'] = '#6F7763';
+            obj['orchard-color-section-alt'] = '#ffffff';
+            obj['orchard-color-footer'] = '#D4D6C9';
+            obj['orchard-color-flag'] = '#E87910';
+            obj['orchard-color-border'] = '#FFAD3A';
+            obj['orchard-color-latest-posts'] = '#39922C';
+            obj['body-bg'] = '#ffffff';
+            obj['text-color'] = '#000000';
+            obj['state-success-text'] = '#3c763d';
+            obj['state-success-bg'] = '#dff0d8';
+            obj['state-info-text'] = '#31708f';
+            obj['state-info-bg'] = '#d9edf7';
+            obj['state-warning-text'] = '#8a6d3b';
+            obj['state-warning-bg'] = '#fcf8e3';
+            obj['state-danger-text'] = '#a94442';
+            obj['state-danger-bg'] = '#f2dede';
+            /*
+             * NOTE WELL:
+             * Update the storageKeyLessVars
+             * after adding variables to the list.
+             * -------------------------------------------
+             */
+            return obj;
+        }
+
         function getLessVars() {
             var obj;
 
             if (window.localStorage.getItem(storageKeyLessVars) !== null) {
                 obj = JSON.parse(window.localStorage.getItem(storageKeyLessVars));
             } else {
-                obj = {};
-                obj['brand-primary'] = '#428bca';
-                obj['brand-success'] = '#5cb85c';
-                obj['brand-info'] = '#5bc0de';
-                obj['brand-warning'] = '#f0ad4e';
-                obj['brand-danger'] = '#d9534f';
-                obj['orchard-color-section'] = '#6F7763';
-                obj['orchard-color-section-alt'] = '#ffffff';
-                obj['orchard-color-footer'] = '#D4D6C9';
-                obj['orchard-color-flag'] = '#E87910';
-                obj['orchard-color-border'] = '#FFAD3A';
-                obj['orchard-color-latest-posts'] = '#39922C';
-                obj['body-bg'] = '#ffffff';
-                obj['text-color'] = '#000000';
-                obj['state-success-text'] = '#3c763d';
-                obj['state-success-bg'] = '#dff0d8';
-                obj['state-info-text'] = '#31708f';
-                obj['state-info-bg'] = '#d9edf7';
-                obj['state-warning-text'] = '#8a6d3b';
-                obj['state-warning-bg'] = '#fcf8e3';
-                obj['state-danger-text'] = '#a94442';
-                obj['state-danger-bg'] = '#f2dede';
-                /*
-                 * NOTE WELL:
-                 * Update the storageKeyLessVars
-                 * after adding variables to the list.
-                 * -------------------------------------------
-                 */
+                obj = getDefaultLessVars();
             }
 
             return obj;
@@ -144,7 +149,7 @@
 
         }
 
-        storageKeyLessVars = 'orchard-lessc-variables-05';
+        storageKeyLessVars = 'orchard-lessc-variables-07';
         storageKeyIsOpen = 'orchard-lessc-open-close';
         picker = $('#less-colour-picker');
         msg = picker.find('span.msg');
