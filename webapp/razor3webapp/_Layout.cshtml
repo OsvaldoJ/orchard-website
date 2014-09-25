@@ -48,6 +48,7 @@
 
     <div id="less-colour-picker">
         <div id="controls" class="alert alert-info">
+            <span class="msg"></span>
             <a id="close" class="btn close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></a>
             <strong>Instructions</strong>
             <ol>
@@ -55,8 +56,10 @@
                 <li>Copy and paste the variables <a href="https://orchard.codeplex.com/discussions/550962">here.</a></li>
             </ol>
             <ul class="less-vars list-unstyled"></ul>
-            <a id="compile" href="#" class="btn btn-primary">Compile</a>
-            <span>lessc and save variables in localStorage.</span>
+            <div class="btn-group">
+                <a id="compile" href="#" class="btn btn-primary" title="Compile lessc and save variables in localStorage.">Compile</a>
+                <a id="reset" href="#" class="btn btn-warning" title="Reset to default lessc variables.">Reset</a>
+            </div>
             <span class="msg"></span>
         </div>
         <a id="open" href="#" class="btn btn-info">Show Colour Picker</a>

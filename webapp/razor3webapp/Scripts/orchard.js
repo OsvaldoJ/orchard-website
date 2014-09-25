@@ -92,8 +92,9 @@
             return obj;
         }
 
-        function appendLessVarsToUI(picker) {
+        function appendLessVarsToUI(picker, lessVars) {
             ul = picker.find('ul.less-vars');
+            ul.empty();
             for (var property in lessVars) {
                 if (lessVars.hasOwnProperty(property)) {
                     key = property;
@@ -163,12 +164,19 @@
         // do stuff
         setupOpenClose(picker, storageKeyIsOpen);
         lessVars = getSavedLessVars(picker);
-        appendLessVarsToUI(picker);
+        appendLessVarsToUI(picker, lessVars);
         compileLess(picker);
 
         // events
         picker.find('a.btn#compile').click(function () {
             lessVars = getLessVarsFromUI();
+            appendLessVarsToUI(picker, lessVars);
+            compileLess(picker, lessVars);
+        });
+
+        picker.find('a.btn#reset').click(function () {
+            lessVars = getDefaultLessVars();
+            appendLessVarsToUI(picker, lessVars);
             compileLess(picker, lessVars);
         });
 
