@@ -38,6 +38,16 @@
             btnOpen,
             btnClose;
 
+        function getLessVarsFromUI() {
+            var lessVars = {};
+            $.each(picker.find('input'), function (index, value) {
+                key = $(value).attr('name');
+                value = $(value).val();
+                lessVars[key] = value;
+            });
+            return lessVars;
+        }
+
         function getDefaultLessVars() {
             var obj = {};
             obj['brand-primary'] = '#428bca';
@@ -70,7 +80,7 @@
             return obj;
         }
 
-        function getLessVars() {
+        function getSavedLessVars() {
             var obj;
             if (window.localStorage.getItem(storageKeyLessVars) !== null) {
                 // local storage
@@ -82,7 +92,7 @@
             return obj;
         }
 
-        function appendLessVars(picker) {
+        function appendLessVarsToUI(picker) {
             ul = picker.find('ul.less-vars');
             for (var property in lessVars) {
                 if (lessVars.hasOwnProperty(property)) {
@@ -103,12 +113,6 @@
         function compileLess(picker) {
             msg.text('Compiling less.');
             msg.show();
-
-            $.each(picker.find('input'), function (index, value) {
-                key = $(value).attr('name');
-                value = $(value).val();
-                lessVars[key] = value;
-            });
 
             window.setTimeout(function () {
                 // compile less with new vars
@@ -149,7 +153,7 @@
 
         }
 
-        storageKeyLessVars = 'orchard-lessc-variables-07';
+        storageKeyLessVars = 'orchard-lessc-variables-08';
         storageKeyIsOpen = 'orchard-lessc-open-close';
         picker = $('#less-colour-picker');
         msg = picker.find('span.msg');
@@ -157,11 +161,13 @@
 
         setupOpenClose(picker, storageKeyIsOpen);
 
-        lessVars = getLessVars(picker);
-        appendLessVars(picker);
+        lessVars = getSavedLessVars(picker);
+        appendLessVarsToUI(picker);
 
         picker.find('a.btn#compile').click(function () {
-            compileLess(picker);
+
+            lessVars = getLessVarsFromUI();
+            compileLess(picker, lessVars);
         });
 
         compileLess(picker);
