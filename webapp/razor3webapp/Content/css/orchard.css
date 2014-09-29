@@ -5799,9 +5799,8 @@ article h6[id] {
   margin-top: 0;
 }
 article section {
-  /*padding-top: 20px;
-        padding-bottom: 40px;*/
   border-bottom: thin solid #ffad3a;
+  min-height: 400px;
 }
 article section:last-child {
   border-bottom: none;
