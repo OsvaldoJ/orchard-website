@@ -5800,6 +5800,10 @@ article section {
 article section:last-child {
   border-bottom: none;
 }
+article#community .affix {
+  top: -16px;
+  z-index: -10;
+}
 article#community section {
   margin-left: 40px;
 }
@@ -6262,6 +6266,10 @@ figure figcaption {
   text-align: center;
 }
 footer#global-footer {
+  border-top: 50px solid rgba(255, 255, 255, 0.95);
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   padding: 30px 0;
   background-color: #d4d6c9;
 }
