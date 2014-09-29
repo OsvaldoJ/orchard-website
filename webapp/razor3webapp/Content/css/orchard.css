@@ -5801,8 +5801,7 @@ article section:last-child {
   border-bottom: none;
 }
 article#community .affix {
-  top: -16px;
-  z-index: -10;
+  top: 5px;
 }
 article#community section {
   margin-left: 40px;
@@ -5931,11 +5930,10 @@ article#community #links {
   margin-left: 0;
   border-bottom: none;
 }
-article#community #links h4 {
-  margin-bottom: 20px;
-}
-article#community #links h4.active {
-  font-weight: bolder;
+article#community #links ul li {
+  padding-bottom: 12.5px;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 article#community #links img {
   margin-bottom: 20px;
@@ -6266,10 +6264,6 @@ figure figcaption {
   text-align: center;
 }
 footer#global-footer {
-  border-top: 50px solid rgba(255, 255, 255, 0.95);
-  -moz-background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   padding: 30px 0;
   background-color: #d4d6c9;
 }
