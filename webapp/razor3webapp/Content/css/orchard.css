@@ -5787,20 +5787,14 @@ article {
   margin-bottom: 20px;
 }
 article header.page-header {
+  border: none;
+}
+article header.page-header.page-header-top {
   border-bottom: thin solid #ffad3a;
 }
-article h1[id],
-article h2[id],
-article h3[id],
-article h4[id],
-article h5[id],
-article h6[id] {
-  padding-top: 20px;
-  margin-top: 0;
-}
 article section {
-  /*padding-top: 20px;
-        padding-bottom: 40px;*/
+  padding-top: 20px;
+  padding-bottom: 40px;
   border-bottom: thin solid #ffad3a;
 }
 article section:last-child {
@@ -6363,8 +6357,7 @@ figure.figure-sm {
 .teamRoster {
   margin-left: -15px;
   margin-right: -15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .teamRoster .photo {
   position: relative;
@@ -6412,11 +6405,11 @@ h6,
 nav {
   text-transform: uppercase;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
+header h1,
+header h2,
+header h3,
+header h4,
+header h5 {
   font-weight: 600;
 }
 .double-spaced {
@@ -6444,27 +6437,12 @@ a.btn {
   margin-bottom: 15px;
 }
 #less-colour-picker ul li {
-  width: 425px;
+  border-bottom: thin dashed silver;
 }
-#less-colour-picker ul li label,
-#less-colour-picker ul li span,
-#less-colour-picker ul li input {
-  margin: 0;
-  padding: 0;
-  border: none;
-  display: inline-block;
-  font-size: 12px;
-  height: 12px;
-  line-height: 1;
-}
-#less-colour-picker ul li label {
-  width: 225px;
-}
-#less-colour-picker ul li span {
-  width: 100px;
-}
-#less-colour-picker ul li input {
-  width: 100px;
+#less-colour-picker input[type=color] {
+  padding: 2px;
+  float: right;
+  margin-left: 20px;
 }
 #less-colour-picker span.msg {
   background-color: #F9EDBE;
