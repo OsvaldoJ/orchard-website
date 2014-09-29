@@ -1,24 +1,21 @@
 ﻿article {
     margin-bottom: 20px;
 
+    header.page-header {
+        border-bottom: thin solid @orchard-color-border;
+    }
 
-    header {
+    h1, h2, h3, h4, h5, h6 {
 
-        &.page-header {
-            border: none;
-
-            h1, h2, h3, h4, h5, h6 {
-            }
-
-            &.page-header-top {
-                border-bottom: thin solid @orchard-color-border;
-            }
+        &[id] {
+            padding-top: 20px;
+            margin-top:0;
         }
     }
 
     section {
-        padding-top: 20px;
-        padding-bottom: 40px;
+        /*padding-top: 20px;
+        padding-bottom: 40px;*/
         border-bottom: thin solid @orchard-color-border;
 
         &:last-child {
