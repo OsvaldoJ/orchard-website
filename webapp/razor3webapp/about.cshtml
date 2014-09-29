@@ -147,22 +147,52 @@
             </div>
         </div>
     </section>
-
     <section>
         <header class="page-header">
             <h2 id="contact">Contact Us</h2>
+            <p>Sebastien loves to chat. Contact him any time on Skype.</p>
+            <address>
+                <a href="mailto:someMail@someDomain.com">sebross@lovestochat.com</a>                
+            </address>
         </header>
     </section>
-
     <section>
         <header class="page-header">
             <h2 id="news">News</h2>
         </header>
+        @{
+            var itemsPerPage = 6;
+            <ul class="list-unstyled">
+                @for (var i = 0; i < itemsPerPage; ++i)
+                {
+                    <li>
+                        <h3>News Item Title</h3>
+                        <p>Posted by Sebastien Ross on 09/25/2014 at 7:37 PM</p>
+                        <p>Since Orchard CMS doesn’t (yet) support authentication and authorization of domain users against an Active Directory, you have to install a module to achieve this. There are handful of modules which could help.</p>
+                        <p><span>Tags:</span> Authentication, Active Directory</p>
+                        <a href="">Read More</a>
+                    </li>
+                }
+            </ul>
+        }
     </section>
-
     <section>
         <header class="page-header">
             <h2 id="events">Events</h2>
         </header>
+        @{
+            <ul class="list-unstyled">
+                @for (var i = 0; i < itemsPerPage; ++i)
+                {
+                    <li>
+                        <h3>Event Title</h3>
+                        <p>Posted by Sebastien Ross on 09/25/2014 at 7:37 PM</p>
+                        <p>Since Orchard CMS doesn’t (yet) support authentication and authorization of domain users against an Active Directory, you have to install a module to achieve this. There are handful of modules which could help.</p>
+                        <p><span>Tags:</span> Authentication, Active Directory</p>
+                        <a href="">Read More</a>
+                    </li>
+                }
+            </ul>
+        }
     </section>
 </article>
