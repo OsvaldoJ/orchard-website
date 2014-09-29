@@ -5806,9 +5806,6 @@ article#community .affix {
 article#community section {
   margin-left: 40px;
 }
-article#community header {
-  margin-top: 40px;
-}
 article#community figure {
   display: block;
   margin-left: auto;
@@ -5925,17 +5922,24 @@ article#community figure button .badge {
   color: #5bc0de;
   background-color: #ffffff;
 }
-article#community #links {
+article#community nav {
   margin-top: 20px;
   margin-left: 0;
   border-bottom: none;
 }
-article#community #links ul li {
+article#community nav ul li {
   padding-bottom: 12.5px;
   text-transform: uppercase;
   font-size: 18px;
 }
-article#community #links img {
+article#community nav ul li li:last-child {
+  padding-bottom: 0;
+}
+article#community nav ul li ul {
+  padding-left: 25px;
+  padding-top: 12.5px;
+}
+article#community nav img {
   margin-bottom: 20px;
 }
 article#community #popular-resources header {

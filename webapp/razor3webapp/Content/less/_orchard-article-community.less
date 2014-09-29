@@ -8,10 +8,6 @@
         margin-left: 40px;
     }
 
-    header {
-        margin-top: 40px;
-    }
-
     figure {
         .center-block;
 
@@ -41,16 +37,27 @@
         }
     }
 
-    #links {
+    nav {
+        @subnav-item-vertical-spacing:12.5px;
         margin-top: 20px;
         margin-left: 0;
         border-bottom: none;
 
         ul {
             li {
-                padding-bottom: 12.5px;
+                padding-bottom:@subnav-item-vertical-spacing;
                 text-transform: uppercase;
                 font-size: @font-size-h4;
+
+                li:last-child {
+                    padding-bottom: 0;
+                }
+
+                ul {
+                    // nested list
+                    padding-left:@subnav-item-vertical-spacing * 2;
+                    padding-top:@subnav-item-vertical-spacing;
+                }
             }
         }
 

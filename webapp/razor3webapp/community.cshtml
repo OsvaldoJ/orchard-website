@@ -9,21 +9,23 @@
     </div>
     <div class="row">
         <div class="col-md-3">
-
             <div data-spy="affix" data-offset-top="225">
-                <nav class="nav" id="links">
+                <nav class="nav">
                     <ul class="list-unstyled">
-                        <li><a href="~/documentation.cshtml">Documentation</a></li>
-                        <li><a href="http://orchard.codeplex.com">Codeplex <i class="glyphicon glyphicon-link"></i></a></li>
-                        <li><a href="http://gallery.orchardproject.net">Modules & Themes <i class="glyphicon glyphicon-link"></i></a></li>
-                        <li><a href="https://orchard.codeplex.com/discussions">Orchard Forums <i class="glyphicon glyphicon-link"></i></a></li>
+                        <li>
+                            <a href="#popular">Popular Resources</a>
+                            <ul class="list-unstyled">
+                                <li><a href="http://orchard.codeplex.com">Codeplex <i class="glyphicon glyphicon-link"></i></a></li>
+                                <li><a href="http://gallery.orchardproject.net">Modules & Themes <i class="glyphicon glyphicon-link"></i></a></li>
+                                <li><a href="https://orchard.codeplex.com/discussions">Orchard Forums <i class="glyphicon glyphicon-link"></i></a></li>
+                            </ul>
+                        </li>
                         <li><a href="#blog">Community Blog</a></li>
                         <li><a href="#contribute">Contribute</a></li>
                         <li><a href="#chat">Chat</a></li>
                         <li><a href="#meetings">Weekly Meeting</a></li>
                         <li><a href="#communities">Communities</a></li>
                         <li><a href="#translate">Translate</a></li>
-                        <li><a href="#partners">Partners</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,19 +38,9 @@
                         <figure>
                             <img src="~/Content/imgs/download.png" />
                             <figcaption>
-                                <h5>Documentation</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <button>Visit Site <span class="glyphicon glyphicon-chevron-right"></span></button>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-4">
-                        <figure>
-                            <img src="~/Content/imgs/download.png" />
-                            <figcaption>
                                 <h5>Codeplex</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <button>Visit Site <span class="glyphicon glyphicon-chevron-right"></span></button>
+                                <a href="http://orchard.codeplex.com" class="btn btn-default">Visit Site <span class="glyphicon glyphicon-chevron-right"></span></a>
                             </figcaption>
                         </figure>
                     </div>
@@ -58,7 +50,17 @@
                             <figcaption>
                                 <h5>Modules & Themes</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <button>Visit Site <span class="glyphicon glyphicon-chevron-right"></span></button>
+                                <a class="btn btn-primary" href="http://gallery.orchardproject.net">Visit Site <span class="glyphicon glyphicon-chevron-right"></span></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure>
+                            <img src="~/Content/imgs/download.png" />
+                            <figcaption>
+                                <h5>Orchard Forums</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a class="btn btn-primary" href="https://orchard.codeplex.com/discussions">Visit Site <span class="glyphicon glyphicon-chevron-right"></span></a>
                             </figcaption>
                         </figure>
                     </div>
