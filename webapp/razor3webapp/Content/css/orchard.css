@@ -6357,7 +6357,8 @@ figure.figure-sm {
 .teamRoster {
   margin-left: -15px;
   margin-right: -15px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .teamRoster .photo {
   position: relative;
@@ -6437,12 +6438,27 @@ a.btn {
   margin-bottom: 15px;
 }
 #less-colour-picker ul li {
-  border-bottom: thin dashed silver;
+  width: 425px;
 }
-#less-colour-picker input[type=color] {
-  padding: 2px;
-  float: right;
-  margin-left: 20px;
+#less-colour-picker ul li label,
+#less-colour-picker ul li span,
+#less-colour-picker ul li input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: inline-block;
+  font-size: 12px;
+  height: 12px;
+  line-height: 1;
+}
+#less-colour-picker ul li label {
+  width: 225px;
+}
+#less-colour-picker ul li span {
+  width: 100px;
+}
+#less-colour-picker ul li input {
+  width: 100px;
 }
 #less-colour-picker span.msg {
   background-color: #F9EDBE;
