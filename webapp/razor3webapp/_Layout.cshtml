@@ -28,8 +28,8 @@
     @RenderSection("head", required: false)
 
     @{
-        var useLess = true;
-        if (useLess)
+        var useLessColorPicker = false;
+        if (useLessColorPicker)
         {
             <link href="/Content/less/orchard.less" rel="stylesheet/less" type="text/css" />
             <script src="/Scripts/less-1.7.5.min.js" type="text/javascript"></script>
@@ -43,27 +43,32 @@
 </head>
 <body>
 
-    <!-- Less color Picker
-    ================================================== -->
+    @if (useLessColorPicker)
+    {
 
-    <div id="less-color-picker">
-        <div id="controls" class="alert alert-info">
-            <span class="msg"></span>
-            <a id="close" class="btn close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></a>
-            <strong>Instructions</strong>
-            <ol>
-                <li>Create something nice.</li>
-                <li>Copy and paste the variables <a href="https://orchard.codeplex.com/discussions/550962">here.</a></li>
-            </ol>
-            <ul class="less-vars list-unstyled"></ul>
-            <div class="btn-group">
-                <a id="compile" href="#" class="btn btn-primary" title="Compile lessc and save variables in localStorage.">Compile</a>
-                <a id="reset" href="#" class="btn btn-warning" title="Reset to default lessc variables.">Reset</a>
+        <!-- Less color Picker
+        ================================================== -->
+
+        <div id="less-color-picker">
+            <div id="controls" class="alert alert-info">
+                <span class="msg"></span>
+                <a id="close" class="btn close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></a>
+                <strong>Instructions</strong>
+                <ol>
+                    <li>Create something nice.</li>
+                    <li>Copy and paste the variables <a href="https://orchard.codeplex.com/discussions/550962">here.</a></li>
+                </ol>
+                <ul class="less-vars list-unstyled"></ul>
+                <div class="btn-group">
+                    <a id="compile" href="#" class="btn btn-primary" title="Compile lessc and save variables in localStorage.">Compile</a>
+                    <a id="reset" href="#" class="btn btn-warning" title="Reset to default lessc variables.">Reset</a>
+                </div>
+                <span class="msg"></span>
             </div>
-            <span class="msg"></span>
+            <a id="open" href="#" class="btn btn-info">Show color Picker</a>
         </div>
-        <a id="open" href="#" class="btn btn-info">Show color Picker</a>
-    </div>
+    }
+
 
 
 
@@ -192,4 +197,5 @@
     <script src="@Fingerprint.Tag("/Scripts/orchard.js")"></script>
 
 </body>
+
 </html>
