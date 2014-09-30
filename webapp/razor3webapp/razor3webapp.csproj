@@ -137,7 +137,7 @@
     <Content Include="Content\less\_orchard-utilities.less" />
     <Content Include="Content\less\_orchard-article-community.less" />
     <Content Include="Content\less\_orchard-team.less" />
-    <Content Include="Content\less\_less-colour-picker.less" />
+    <Content Include="Content\less\_less-color-picker.less" />
     <Content Include="Content\less\_orchard-article.less" />
     <Content Include="Content\less\_orchard-article-home.less" />
     <Content Include="Content\bootstrap\alerts.less" />
