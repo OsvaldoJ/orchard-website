@@ -210,6 +210,7 @@
     <Content Include="Content\bootstrap\mixins\text-overflow.less" />
     <Content Include="Content\bootstrap\mixins\vendor-prefixes.less" />
     <Content Include="Content\bootstrap\variables.less" />
+    <Content Include="Content\less\_orchard-article-customers.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

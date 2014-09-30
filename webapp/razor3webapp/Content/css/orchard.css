@@ -6519,6 +6519,13 @@ article#download figure button .badge {
   color: #5bc0de;
   background-color: #ffffff;
 }
+article#customers .gallery {
+  text-align: center;
+}
+article#customers .thumbnail.thumbnail-customer {
+  border: thin solid #ffad3a;
+  display: inline-block;
+}
 article#home {
   margin-bottom: 0;
 }
