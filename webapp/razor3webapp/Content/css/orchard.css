@@ -6382,18 +6382,26 @@ article#community #blog ul.blogposts li.post:last-child {
 article#community #communities .embed-responsive {
   margin-bottom: 20px;
 }
-article#community #communities dl dt {
+article#community #communities .embed-responsive iframe {
+  overflow: hidden !important;
+}
+article#community #communities dl.dl-horizontal {
+  margin-bottom: 0;
+}
+article#community #communities dl.dl-horizontal dt,
+article#community #communities dl.dl-horizontal dd {
+  line-height: 3;
   text-align: left;
-}
-article#community #communities dl dd {
-  border-bottom: thin solid #ACC7F2;
   margin: 0;
+  padding: 0 15px;
 }
-article#community #communities dl dd:last-child {
+article#community #communities dl.dl-horizontal dd {
+  border-bottom: thin solid #bce8f1;
+  border-left: none;
+  border-right: none;
+}
+article#community #communities dl.dl-horizontal dd:last-child {
   border: none;
-}
-article#community #communities dl dd a {
-  text-decoration: none;
 }
 article#download figure {
   display: block;

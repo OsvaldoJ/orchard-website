@@ -141,42 +141,355 @@
             </section>
             <section id="communities">
                 <header class="page-header"><h2>Communities</h2></header>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item"
-                            src="//www.bing.com/maps/embed/viewer.aspx?v=3&cp=10.199759~9.453125&lvl=2&w=800&h=450&sty=r&typ=d&pp=&ps=&dir=0&mkt=en-ca&form=BMEMJS"></iframe>
+                <div class="panel panel-info">
+                    <!--http://upload.wikimedia.org/wikipedia/commons/b/b3/World-map-2004-cia-factbook-large-1.7m-whitespace-removed.jpg-->
+                    <img class="img-responsive" src="~/Content/imgs/world-map-from-wikipedia.jpg" />
+                    <dl class="dl-horizontal">
+                        <dt>Belgique</dt>
+                        <dd><a href="http://www.orchardproject.be/">http://www.orchardproject.be/</a></dd>
+                        <dt>China</dt>
+                        <dd><a href="http://www.orchardch.com/">http://www.orchardch.com/</a></dd>
+                        <dt>Colombia</dt>
+                        <dd><a href="http://www.orchardproject.co/">http://www.orchardproject.co/</a></dd>
+                        <dt>Hispana</dt>
+                        <dd><a href="http://www.orchardhispano.com/">http://www.orchardhispano.com/</a></dd>
+                        <dt>France</dt>
+                        <dd><a href="http://orchardproject.fr/">http://orchardproject.fr/</a></dd>
+                        <dt>Iran</dt>
+                        <dd><a href="http://orchardpro.ir/">http://orchardpro.ir/</a></dd>
+                        <dt>Italia</dt>
+                        <dd><a href="http://www.orcharditalia.net/">http://www.orcharditalia.net/</a></dd>
+                        <dt>Magyarország</dt>
+                        <dd><a href="http://orchardproject.hu/">http://orchardproject.hu/</a></dd>
+                        <dt>Nederland</dt>
+                        <dd><a href="http://orchard-project.nl/">http://orchard-project.nl/</a></dd>
+                        <dt>Portugal</dt>
+                        <dd><a href="http://www.orchardproject.pt/">http://www.orchardproject.pt/</a></dd>
+                        <dt>Russia</dt>
+                        <dd><a href="http://orchardproject.net.ru/">http://orchardproject.net.ru/</a></dd>
+                        <dt>Switzerland</dt>
+                        <dd><a href="http://www.orchardproject.ch/">http://www.orchardproject.ch/</a></dd>
+                    </dl>
                 </div>
-                <dl class="dl-horizontal">
-                    <dt>Belgique</dt>
-                    <dd><a href="http://www.orchardproject.be/">http://www.orchardproject.be/</a></dd>
-                    <dt>China</dt>
-                    <dd><a href="http://www.orchardch.com/">http://www.orchardch.com/</a></dd>
-                    <dt>Colombia</dt>
-                    <dd><a href="http://www.orchardproject.co/">http://www.orchardproject.co/</a></dd>
-                    <dt>Hispana</dt>
-                    <dd><a href="http://www.orchardhispano.com/">http://www.orchardhispano.com/</a></dd>
-                    <dt>France</dt>
-                    <dd><a href="http://orchardproject.fr/">http://orchardproject.fr/</a></dd>
-                    <dt>Iran</dt>
-                    <dd><a href="http://orchardpro.ir/">http://orchardpro.ir/</a></dd>
-                    <dt>Italia</dt>
-                    <dd><a href="http://www.orcharditalia.net/">http://www.orcharditalia.net/</a></dd>
-                    <dt>Magyarország</dt>
-                    <dd><a href="http://orchardproject.hu/">http://orchardproject.hu/</a></dd>
-                    <dt>Nederland</dt>
-                    <dd><a href="http://orchard-project.nl/">http://orchard-project.nl/</a></dd>
-                    <dt>Portugal</dt>
-                    <dd><a href="http://www.orchardproject.pt/">http://www.orchardproject.pt/</a></dd>
-                    <dt>Russia</dt>
-                    <dd><a href="http://orchardproject.net.ru/">http://orchardproject.net.ru/</a></dd>
-                    <dt>Switzerland</dt>
-                    <dd><a href="http://www.orchardproject.ch/">http://www.orchardproject.ch/</a></dd>
-                </dl>
-
-
-
             </section>
             <section id="translate">
                 <header class="page-header"><h2>Translate</h2></header>
+                <p>Orchard's localization management is hosted on an external service (<a target="_blank" href="https://crowdin.net/">Crowdin</a>), <a target="_blank" href="https://crowdin.net/project/orchard-cms">the project is avaiable for the public</a> and contributions are welcome!</p>
+                <h3>How to contribute</h3>
+                <ul>
+                    <li>Register on <a target="_blank" href="https://crowdin.net/">Crowdin</a>.</li>
+                    <li>Go to the project page of <a target="_blank" href="https://crowdin.net/project/orchard-cms">Orchard CMS</a> and <a target="_blank" href="https://crowdin.com/project/orchard-cms-gallery">Orchard CMS Gallery</a> and apply to join the project.</li>
+                    <li>Your application will be accepted shortly and you'll be added to the project as "Proofreader" for the selected languages. This means that you'll be able to edit and approve translations (which is necessary for the translated strings to be included in the downloadable packages).</li>
+                    <li>If you are new to the Orchard translations, please consult with other translators of the same language and make sure you follow the same conventions.</li>
+                </ul>
+                <h3>Receive updates</h3>
+                <ul>
+                    <li>More information about localization can be found here: <a target="_blank" href="http://docs.orchardproject.net/Documentation/Creating-global-ready-applications">Creating global-ready applications</a>.</li>
+                    <li>For updates and information about the usage of Crowdin, please visit <a target="_blank" href="https://orchard.codeplex.com/discussions/547161">the dedicated discussion in the Orchard forums</a> and subscribe.</li>
+                    <li>You can also subscribe to the localization mailing list by sending an email to <a href="mailto:join-orchard-localization@lists.outercurve.org">join-orchard-localization@lists.outercurve.org</a>.</li>
+                </ul>
+                <h3>Downloadable packages</h3>
+                <p>Orchard's translations are stored in the form of PO-files in packages, that you can add to your own Orchard instance. These packages are regenerated at the beginning of every hour (the process takes 2-3 minutes). Please visit <a target="_blank" href="https://crowdin.net/project/orchard-cms">the project home page on Crowdin</a> to see the progress of the translations for each language.</p>
+                <p>You can download all the translations for each language for both projects: <a href="https://crowdin.net/download/project/orchard-cms.zip">Orchard CMS</a>, <a href="https://crowdin.net/download/project/orchard-cms-gallery.zip">Orchard CMS Gallery</a>.</p>
+                <p>The individual downloadable packages for each language are the following:</p>
+                <table class="table table-responsive table-hover">
+                    <thead>
+                        <tr><th>Language</th><th>Culture code</th><th>Source package</th><th>Gallery package</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Afrikaans</td>
+                            <td>af-ZA</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/af.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/af.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Arabic, Egypt</td>
+                            <td>ar-EG</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/ar-EG.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/ar-EG.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Bosnian</td>
+                            <td>bs-BA</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/bs.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/bs.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Chinese Simplified</td>
+                            <td>zh-CN</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/zh-CN.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/zh-CN.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Chinese Traditional</td>
+                            <td>zh-TW</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/zh-TW.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/zh-TW.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Croatian</td>
+                            <td>hr-HR</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/hr.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/hr.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Czech</td>
+                            <td>cs-CZ</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/cs.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/cs.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Danish</td>
+                            <td>da-DK</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/da.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/da.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dutch</td>
+                            <td>nl-NL</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/nl.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/nl.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dutch, Belgium</td>
+                            <td>nl-BE</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/nl-BE.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/nl-BE.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>English, Australia</td>
+                            <td>en-AU</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/en-AU.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/en-AU.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Finnish</td>
+                            <td>fi-FI</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/fi.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/fi.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>French</td>
+                            <td>fr-FR</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/fr.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/fr.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>French, Canada</td>
+                            <td>fr-CA</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/fr-CA.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/fr-CA.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Frisian</td>
+                            <td>fy-NL</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/fy-NL.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/fy-NL.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>German</td>
+                            <td>de-DE</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/de.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/de.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Greek</td>
+                            <td>el-GR</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/el.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/el.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Hebrew</td>
+                            <td>he-IL</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/he.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/he.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Hungarian</td>
+                            <td>hu-HU</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/hu.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/hu.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Indonesian</td>
+                            <td>id-ID</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/id.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/id.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Italian</td>
+                            <td>it-IT</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/it.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/it.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Japanese</td>
+                            <td>ja-JP</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/ja.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/ja.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Klingon</td>
+                            <td>tlh-AA</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/tlh-AA.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/tlh-AA.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Korean</td>
+                            <td>ko-KR</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/ko.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/ko.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Latin</td>
+                            <td>la-LA</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/la-LA.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/la-LA.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Lithuanian</td>
+                            <td>lt-LT</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/lt.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/lt.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Macedonian</td>
+                            <td>mk-MK</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/mk.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/mk.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Norwegian Bokmal</td>
+                            <td>nb-NO</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/nb.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/nb.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Persian</td>
+                            <td>fa-IR</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/fa.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/fa.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Polish</td>
+                            <td>pl-PL</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/pl.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/pl.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Portuguese</td>
+                            <td>pt-PT</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/pt-PT.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/pt-PT.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Portuguese, Brazilian</td>
+                            <td>pt-BR</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/pt-BR.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/pt-BR.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Romanian</td>
+                            <td>ro-RO</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/ro.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/ro.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Russian</td>
+                            <td>ru-RU</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/ru.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/ru.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Serbian (Cyrillic)</td>
+                            <td>sr-Cyrl-RS</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/sr.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/sr.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Serbian (Latin)</td>
+                            <td>sr-Latn-RS</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/sr-CS.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/sr-CS.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Slovak</td>
+                            <td>sk-SK</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/sk.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/sk.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Slovenian</td>
+                            <td>sl-SL</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/sl.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/sl.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Spanish</td>
+                            <td>es-ES</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/es-ES.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/es-ES.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Spanish, Argentina</td>
+                            <td>es-AR</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/es-AR.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/es-AR.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Spanish, Mexico</td>
+                            <td>es-MX</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/es-MX.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/es-MX.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Swedish</td>
+                            <td>sv-SE</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/sv-SE.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/sv-SE.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Tamil</td>
+                            <td>ta</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/ta.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/ta.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Thai</td>
+                            <td>th-TH</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/th.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/th.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Turkish</td>
+                            <td>tr-TR</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/tr.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/tr.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ukrainian</td>
+                            <td>uk-UA</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/uk.zip">link</a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/uk.zip">link</a></td>
+                        </tr>
+                        <tr>
+                            <td>Vietnamese</td>
+                            <td>vi-VN</td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms/vi.zip">link<br></a></td>
+                            <td><a href="https://crowdin.net/download/project/orchard-cms-gallery/vi.zip">link<br></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+
+
+
+
+
             </section>
         </div>
     </div>

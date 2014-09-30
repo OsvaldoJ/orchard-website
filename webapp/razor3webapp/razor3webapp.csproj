@@ -105,6 +105,7 @@
     <Content Include="Content\imgs\screenshot.png" />
     <Content Include="Content\imgs\carousel-main\unicorn1.jpg" />
     <Content Include="Content\imgs\vertical-rule.png" />
+    <Content Include="Content\imgs\world-map-from-wikipedia.jpg" />
     <Content Include="customers.cshtml" />
     <Content Include="documentation.cshtml" />
     <Content Include="download.cshtml" />
