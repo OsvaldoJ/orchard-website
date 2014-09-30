@@ -20,7 +20,7 @@
 
     // see http://lesscss.org/usage/#using-less-in-the-browser
     // this is in need of refactoring
-    function setupLessColourPicker(less) {
+    function setupLesscolorPicker(less) {
 
         var picker,
             key,
@@ -157,7 +157,7 @@
         // instantiate
         storageKeyLessVars = 'orchard-lessc-variables-08';
         storageKeyIsOpen = 'orchard-lessc-open-close';
-        picker = $('#less-colour-picker');
+        picker = $('#less-color-picker');
         msg = picker.find('span.msg');
         msg.hide();
 
@@ -183,6 +183,6 @@
     }
 
     setupWhyOrchardCarousel();
-    setupLessColourPicker(less);
+    setupLesscolorPicker(less);
 
 }(window, less));

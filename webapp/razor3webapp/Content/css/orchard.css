@@ -6862,21 +6862,21 @@ a.btn {
 #why-orchard ol li.active {
   font-weight: bold;
 }
-#less-colour-picker {
+#less-color-picker {
   position: fixed;
   bottom: 10px;
   right: 10px;
   z-index: 1000;
 }
-#less-colour-picker ul {
+#less-color-picker ul {
   margin-bottom: 15px;
 }
-#less-colour-picker ul li {
+#less-color-picker ul li {
   width: 425px;
 }
-#less-colour-picker ul li label,
-#less-colour-picker ul li span,
-#less-colour-picker ul li input {
+#less-color-picker ul li label,
+#less-color-picker ul li span,
+#less-color-picker ul li input {
   margin: 0;
   padding: 0;
   border: none;
@@ -6885,16 +6885,16 @@ a.btn {
   height: 12px;
   line-height: 1;
 }
-#less-colour-picker ul li label {
+#less-color-picker ul li label {
   width: 225px;
 }
-#less-colour-picker ul li span {
+#less-color-picker ul li span {
   width: 100px;
 }
-#less-colour-picker ul li input {
+#less-color-picker ul li input {
   width: 100px;
 }
-#less-colour-picker span.msg {
+#less-color-picker span.msg {
   background-color: #F9EDBE;
   color: black;
   border: thin solid #eecd49;
@@ -6904,7 +6904,7 @@ a.btn {
   display: block;
 }
 @media (max-width: 800px) {
-  #less-colour-picker {
+  #less-color-picker {
     display: none;
   }
 }
