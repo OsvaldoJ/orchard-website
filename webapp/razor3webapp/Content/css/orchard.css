@@ -6202,6 +6202,11 @@ article section {
 article section:last-child {
   border-bottom: none;
 }
+@media (max-width: 992px) {
+  article#community .affix {
+    position: static;
+  }
+}
 article#community .affix {
   top: 5px;
 }
@@ -6373,6 +6378,22 @@ article#community #blog ul.blogposts li.post ul {
 }
 article#community #blog ul.blogposts li.post:last-child {
   border-bottom: none;
+}
+article#community #communities .embed-responsive {
+  margin-bottom: 20px;
+}
+article#community #communities dl dt {
+  text-align: left;
+}
+article#community #communities dl dd {
+  border-bottom: thin solid #ACC7F2;
+  margin: 0;
+}
+article#community #communities dl dd:last-child {
+  border: none;
+}
+article#community #communities dl dd a {
+  text-decoration: none;
 }
 article#download figure {
   display: block;
