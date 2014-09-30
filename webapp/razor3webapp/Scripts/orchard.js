@@ -183,6 +183,9 @@
     }
 
     setupWhyOrchardCarousel();
-    setupLesscolorPicker(less);
+    if (less)
+    {
+        setupLesscolorPicker(less);
+    }    
 
 }(window, less));
